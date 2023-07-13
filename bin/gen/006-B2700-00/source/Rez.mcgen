@@ -1,0 +1,38 @@
+import Toybox.Lang;
+using Toybox.WatchUi;
+using Toybox.WatchUi as Ui;
+using Toybox.Graphics;
+using Toybox.Graphics as Gfx;
+
+module Rez {
+    module Drawables {
+        (:initialized) var LauncherIcon as Symbol;
+    } // Drawables
+
+    module Fonts {
+    } // Fonts
+
+    module JsonData {
+    } // JsonData
+
+    module Layouts {
+        function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
+            var rez_cmp_local_text_timeDisplay = new WatchUi.Text({:identifier=>"timeDisplay", :color=>Graphics.COLOR_BLUE, :locX=>(240 * 0.5), :locY=>((240 - dc.getFontHeight(Graphics.FONT_LARGE)) * 0.5), :justification=>Graphics.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_LARGE});
+
+            var rez_cmp_local_text_heartRateDisplay = new WatchUi.Text({:identifier=>"heartRateDisplay", :color=>Gfx.COLOR_BLUE, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_TOP, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            var rez_cmp_local_text_stepsDisplay = new WatchUi.Text({:identifier=>"stepsDisplay", :color=>Gfx.COLOR_BLUE, :locX=>WatchUi.LAYOUT_HALIGN_RIGHT, :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            var rez_cmp_local_text_batteryDisplay = new WatchUi.Text({:identifier=>"batteryDisplay", :color=>Gfx.COLOR_BLUE, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
+
+            return [rez_cmp_local_text_timeDisplay, rez_cmp_local_text_heartRateDisplay, rez_cmp_local_text_stepsDisplay, rez_cmp_local_text_batteryDisplay] as Array<WatchUi.Drawable>;
+        }
+    } // Layouts
+
+    module Menus {
+    } // Menus
+
+    module Strings {
+        (:initialized) var AppName as Symbol;
+    } // Strings
+} // Rez

@@ -1,0 +1,6 @@
+<layout id="WatchFace">
+    <label id="timeDisplay" x="center" y="center" font="Graphics.FONT_LARGE" justification="Graphics.TEXT_JUSTIFY_CENTER" color="Graphics.COLOR_BLUE" />
+    <label id="heartRateDisplay" x="center" y="top" font="Graphics.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLUE"/>
+    <label id="stepsDisplay" x="right" y="bottom" font="Graphics.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLUE"/>
+    <label id="batteryDisplay" x="center" y="bottom" font="Graphics.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLUE"/>
+</layout>
