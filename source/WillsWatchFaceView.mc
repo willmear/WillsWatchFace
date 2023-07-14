@@ -3,6 +3,7 @@ import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.ActivityMonitor;
+import Toybox.Weather;
 
 class WillsWatchFaceView extends WatchUi.WatchFace {
 
@@ -27,6 +28,9 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
         setClockDisplay();
         setBatteryDisplay();
         setHeartRateDisplay();
+        // setWeatherDisplay(); // API 3.2.0  
+        setStepCount();  
+        setStepGoalPercent();
 
         
 
@@ -83,6 +87,37 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
 
         var heartRateDisplay = View.findDrawableById("heartRateDisplay") as Text;
         heartRateDisplay.setText(heartrate);
+
+    }
+
+    private function setWeatherDisplay() {
+
+        var weather = Weather.getCurrentConditions().temperature;
+        var weatherDisplay = View.findDrawableById("weatherDisplay") as Text;
+        weatherDisplay.setText(weather.format("%d"));
+
+    }
+
+    private function setStepCount() {
+
+        var stepCount = ActivityMonitor.getInfo().steps;
+        var stepCountDisplay = View.findDrawableById("stepCountDisplay") as Text;
+        stepCountDisplay.setText(stepCount.format("%d"));
+
+    }
+
+    private function setStepGoalPercent() {
+
+        var steps = ActivityMonitor.getInfo().steps;
+        var stepGoal = ActivityMonitor.getInfo().stepGoal;
+        var percent = 0;
+
+        if (steps > 0 && stepGoal != null) {
+            percent = ((stepGoal.toFloat() / steps.toFloat()) * 100f);
+        }
+        
+        var stepGoalPercent = View.findDrawableById("stepGoalDisplay") as Text;
+        stepGoalPercent.setText(percent.format("%d") + "%");
 
     }
 

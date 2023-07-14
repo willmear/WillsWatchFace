@@ -27,9 +27,7 @@ module Rez {
 
             var rez_cmp_local_text_stepCountDisplay = new WatchUi.Text({:identifier=>"stepCountDisplay", :color=>Gfx.COLOR_BLUE, :locX=>WatchUi.LAYOUT_HALIGN_LEFT, :locY=>((240 - dc.getFontHeight(Graphics.FONT_SMALL)) * 0.5), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
 
-            var rez_cmp_local_text_stepGoalDisplay = new WatchUi.Text({:identifier=>"stepGoalDisplay", :color=>Gfx.COLOR_BLUE, :locX=>WatchUi.LAYOUT_HALIGN_RIGHT, :locY=>((240 - dc.getFontHeight(Graphics.FONT_SMALL)) * 0.5), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Graphics.FONT_SMALL});
-
-            return [rez_cmp_local_text_timeDisplay, rez_cmp_local_text_heartRateDisplay, rez_cmp_local_text_stepsDisplay, rez_cmp_local_text_batteryDisplay, rez_cmp_local_text_stepCountDisplay, rez_cmp_local_text_stepGoalDisplay] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_text_timeDisplay, rez_cmp_local_text_heartRateDisplay, rez_cmp_local_text_stepsDisplay, rez_cmp_local_text_batteryDisplay, rez_cmp_local_text_stepCountDisplay] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 
