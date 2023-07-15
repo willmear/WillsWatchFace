@@ -4,8 +4,11 @@ import Toybox.System;
 import Toybox.WatchUi;
 import Toybox.ActivityMonitor;
 import Toybox.Weather;
+import Toybox.Time;
 
 class WillsWatchFaceView extends WatchUi.WatchFace {
+
+    var timeFont = null;
 
     function initialize() {
         WatchFace.initialize();
@@ -24,6 +27,7 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
 
     // Update the view
     function onUpdate(dc as Dc) as Void {
+
         // Get and show the current time
         setClockDisplay();
         setBatteryDisplay();
@@ -31,11 +35,14 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
         // setWeatherDisplay(); // API 3.2.0  
         setStepCount();  
         setStepGoalPercent();
-
+        setDate();
+        
+        
         
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+        
     }
 
     // Called when this View is removed from the screen. Save the
@@ -55,9 +62,16 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
     private function setClockDisplay() {
         
         var clockTime = System.getClockTime();
-        var timeString = Lang.format("$1$:$2$", [clockTime.hour, clockTime.min.format("%02d")]);
-        var timeDisplay = View.findDrawableById("timeDisplay") as Text;
-        timeDisplay.setText(timeString);
+
+        var hourString = Lang.format("$1$", [clockTime.hour]);
+        var minuteString = Lang.format("$1$", [clockTime.min.format("%02d")]);
+        
+        var hourDisplay = View.findDrawableById("timeDisplayHour") as Text;
+        var minuteDisplay = View.findDrawableById("timeDisplayMinute") as Text;
+
+        hourDisplay.setText(hourString);
+        minuteDisplay.setText(minuteString);
+
 
     }
 
@@ -101,7 +115,7 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
     private function setStepCount() {
 
         var stepCount = ActivityMonitor.getInfo().steps;
-        var stepCountDisplay = View.findDrawableById("stepCountDisplay") as Text;
+        var stepCountDisplay = View.findDrawableById("stepsDisplay") as Text;
         stepCountDisplay.setText(stepCount.format("%d"));
 
     }
@@ -118,6 +132,19 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
         
         var stepGoalPercent = View.findDrawableById("stepGoalDisplay") as Text;
         stepGoalPercent.setText(percent.format("%d") + "%");
+
+    }
+
+    private function setDate() {
+
+        var today = Time.Gregorian.info(Time.now(), Time.FORMAT_MEDIUM);
+        var dateString = Lang.format("$1$ $2$, $3$ ",
+            [today.month,
+             today.day,
+             today.year]
+            );
+        var dateDisplay = View.findDrawableById("dateDisplay") as Text;
+        dateDisplay.setText(dateString);
 
     }
 
