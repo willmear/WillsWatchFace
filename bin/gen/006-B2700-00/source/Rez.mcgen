@@ -6,10 +6,14 @@ using Toybox.Graphics as Gfx;
 
 module Rez {
     module Drawables {
+        (:initialized) var heartImage as Symbol;
+        (:initialized) var stepsImage as Symbol;
+        (:initialized) var trophyImage as Symbol;
         (:initialized) var LauncherIcon as Symbol;
     } // Drawables
 
     module Fonts {
+        (:initialized) var roboto as Symbol;
     } // Fonts
 
     module JsonData {
@@ -17,21 +21,24 @@ module Rez {
 
     module Layouts {
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-            var rez_cmp_local_text_timeDisplayHour = new WatchUi.Text({:identifier=>"timeDisplayHour", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (40 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+            var local_Rez_Fonts_roboto = (WatchUi.loadResource($.Rez.Fonts.roboto) as WatchUi.FontResource);
+            var rez_cmp_local_custom_drawable_Background = new Background({:identifier=>"Background", :borderColour=>0xFFFFFF});
 
-            var rez_cmp_local_text_timeDisplayMinute = new WatchUi.Text({:identifier=>"timeDisplayMinute", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (50 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_LARGE});
+            var rez_cmp_local_text_dateDisplay = new WatchUi.Text({:identifier=>"dateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (13 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
 
-            var rez_cmp_local_text_heartRateDisplay = new WatchUi.Text({:identifier=>"heartRateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_TOP, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_timeDisplayHour = new WatchUi.Text({:identifier=>"timeDisplayHour", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (30 / 100.0)), :locY=>(240 * (25 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_roboto});
+
+            var rez_cmp_local_text_timeDisplayMinute = new WatchUi.Text({:identifier=>"timeDisplayMinute", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (30 / 100.0)), :locY=>(240 * (50 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_roboto});
+
+            var rez_cmp_local_text_heartRateDisplay = new WatchUi.Text({:identifier=>"heartRateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (35 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            var rez_cmp_local_text_stepsDisplay = new WatchUi.Text({:identifier=>"stepsDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (47 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+
+            var rez_cmp_local_text_stepGoalDisplay = new WatchUi.Text({:identifier=>"stepGoalDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (58 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
 
             var rez_cmp_local_text_batteryDisplay = new WatchUi.Text({:identifier=>"batteryDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
 
-            var rez_cmp_local_text_stepsDisplay = new WatchUi.Text({:identifier=>"stepsDisplay", :color=>Gfx.COLOR_WHITE, :locX=>WatchUi.LAYOUT_HALIGN_LEFT, :locY=>((240 - dc.getFontHeight(Gfx.FONT_SMALL)) * 0.5), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
-
-            var rez_cmp_local_text_stepGoalDisplay = new WatchUi.Text({:identifier=>"stepGoalDisplay", :color=>Gfx.COLOR_WHITE, :locX=>WatchUi.LAYOUT_HALIGN_RIGHT, :locY=>((240 - dc.getFontHeight(Gfx.FONT_SMALL)) * 0.5), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
-
-            var rez_cmp_local_text_dateDisplay = new WatchUi.Text({:identifier=>"dateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>(240 * (30 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
-
-            return [rez_cmp_local_text_timeDisplayHour, rez_cmp_local_text_timeDisplayMinute, rez_cmp_local_text_heartRateDisplay, rez_cmp_local_text_batteryDisplay, rez_cmp_local_text_stepsDisplay, rez_cmp_local_text_stepGoalDisplay, rez_cmp_local_text_dateDisplay] as Array<WatchUi.Drawable>;
+            return [rez_cmp_local_custom_drawable_Background, rez_cmp_local_text_dateDisplay, rez_cmp_local_text_timeDisplayHour, rez_cmp_local_text_timeDisplayMinute, rez_cmp_local_text_heartRateDisplay, rez_cmp_local_text_stepsDisplay, rez_cmp_local_text_stepGoalDisplay, rez_cmp_local_text_batteryDisplay] as Array<WatchUi.Drawable>;
         }
     } // Layouts
 

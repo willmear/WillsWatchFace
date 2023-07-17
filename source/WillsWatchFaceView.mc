@@ -8,10 +8,15 @@ import Toybox.Time;
 
 class WillsWatchFaceView extends WatchUi.WatchFace {
 
-    var timeFont = null;
+    var heartImage;
+    var stepsImage;
+    var trophyImage;
 
     function initialize() {
         WatchFace.initialize();
+        heartImage = WatchUi.loadResource(Rez.Drawables.heartImage);
+        stepsImage = WatchUi.loadResource(Rez.Drawables.stepsImage);
+        trophyImage = WatchUi.loadResource(Rez.Drawables.trophyImage);
     }
 
     // Load your resources here
@@ -28,6 +33,11 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
     // Update the view
     function onUpdate(dc as Dc) as Void {
 
+        var deviceHeight = dc.getHeight();
+		var deviceWidth = dc.getWidth();
+        var x=(deviceWidth*0.57), yHeart=(deviceHeight*0.37), ySteps=(deviceHeight*0.49), yTrophy=(deviceHeight*0.61);
+        
+
         // Get and show the current time
         setClockDisplay();
         setBatteryDisplay();
@@ -37,12 +47,15 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
         setStepGoalPercent();
         setDate();
         
-        
-        
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
-        
+        dc.drawBitmap(x, yHeart, heartImage);
+        dc.drawBitmap(x, ySteps, stepsImage);
+        dc.drawBitmap(x, yTrophy, trophyImage);
+
+
+
     }
 
     // Called when this View is removed from the screen. Save the

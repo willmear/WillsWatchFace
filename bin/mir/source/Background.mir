@@ -1,3 +1,75 @@
-[ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 23; ]
+[ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 1; ]
+using Toybox.WatchUi as :Ui;
+[ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 3; ]
+class Background extends Ui.Drawable{
+    [ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 3; ]
+    <init> {
+    }
+    [ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 3; ]
+    static
+    <init> {
+    }
+    [ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 4; @position = 12; ]
+    protected
+    var borderColour;
+    [ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 6; ]
+    function initialize(params) as Void {
+_home_will_WillsWatchFace_source_Background_mc_6_32_start:
+[ "/home/will/WillsWatchFace/source/Background.mc" 7 8 ]
+        %tmp.2 = getv ? :Drawable;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        %tmp.5 = lgetv %params;
+        invoke %tmp.2 %tmp.3(%tmp.5);
+[ "/home/will/WillsWatchFace/source/Background.mc" 9 8 ]
+        %tmp.6 = lgetv %params;
+        %tmp.7 = getv function %tmp.6 :get;
+        %tmp.9 = const :borderColour;
+        %tmp.10 = invoke %tmp.6 %tmp.7(%tmp.9);
+        putv self :borderColour %tmp.10;
+_home_will_WillsWatchFace_source_Background_mc_6_32_stop:
+    }
+    [ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 13; ]
+    function draw(dc) {
+_home_will_WillsWatchFace_source_Background_mc_13_22_start:
+[ "/home/will/WillsWatchFace/source/Background.mc" 17 5 ]
+        [ "_home_will_WillsWatchFace_source_Background_mc_13_22_start" "_home_will_WillsWatchFace_source_Background_mc_13_22_stop" ]
+        %halfOfHeight.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getHeight;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        %tmp.4 = 2;
+        %tmp.5 = div %tmp.3 %tmp.4;
+        lputv %halfOfHeight.1 %tmp.5;
+[ "/home/will/WillsWatchFace/source/Background.mc" 18 2 ]
+        [ "_home_will_WillsWatchFace_source_Background_mc_13_22_start" "_home_will_WillsWatchFace_source_Background_mc_13_22_stop" ]
+        %deviceWidth.2 = local;
+        %tmp.6 = lgetv %dc;
+        %tmp.7 = getv function %tmp.6 :getWidth;
+        %tmp.8 = invoke %tmp.6 %tmp.7();
+        lputv %deviceWidth.2 %tmp.8;
+[ "/home/will/WillsWatchFace/source/Background.mc" 20 8 ]
+        %tmp.9 = lgetv %dc;
+        %tmp.10 = getv function %tmp.9 :setColor;
+        %tmp.12 = getv ? :borderColour;
+        %tmp.14 = getv ? :borderColour;
+        invoke %tmp.9 %tmp.10(%tmp.12, %tmp.14);
+[ "/home/will/WillsWatchFace/source/Background.mc" 21 2 ]
+        %tmp.15 = lgetv %dc;
+        %tmp.16 = getv function %tmp.15 :fillRectangle;
+        %tmp.18 = lgetv %deviceWidth.2;
+        %tmp.19 = 2;
+        %tmp.20 = div %tmp.18 %tmp.19;
+        %tmp.22 = lgetv %halfOfHeight.1;
+        %tmp.23 = 1.7;
+        %tmp.24 = div %tmp.22 %tmp.23;
+        %tmp.25 = 2;
+        %tmp.27 = lgetv %halfOfHeight.1;
+        %tmp.28 = 1.04;
+        %tmp.29 = div %tmp.27 %tmp.28;
+        invoke %tmp.15 %tmp.16(%tmp.20, %tmp.24, %tmp.25, %tmp.29);
+_home_will_WillsWatchFace_source_Background_mc_13_22_stop:
+    }
+}
+[ @file = "/home/will/WillsWatchFace/source/Background.mc"; @line = 1; ]
 <init> {
 }

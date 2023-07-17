@@ -22,20 +22,48 @@ class WillsWatchFaceView extends WatchUi.WatchFace{
     <init> {
     }
     [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 11; @position = 8; ]
-    var timeFont = null;
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 13; ]
+    var heartImage;
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 12; @position = 8; ]
+    var stepsImage;
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 13; @position = 8; ]
+    var trophyImage;
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 15; ]
     function initialize() as Void {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_13_26_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 14 8 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_15_26_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 16 8 ]
         %tmp.2 = getv ? :WatchFace;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_13_26_stop:
-    }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 18; ]
-    function onLayout(dc as Dc) as Void {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_18_40_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 17 8 ]
+        %tmp.4 = getm $.Toybox.WatchUi;
+        %tmp.5 = getv function %tmp.4 :loadResource;
+        %tmp.7 = getv ? :Rez;
+        %tmp.8 = getv %tmp.7 :Drawables;
+        %tmp.9 = getv %tmp.8 :heartImage;
+        %tmp.10 = invoke %tmp.4 %tmp.5(%tmp.9);
+        putv self :heartImage %tmp.10;
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 18 8 ]
+        %tmp.11 = getm $.Toybox.WatchUi;
+        %tmp.12 = getv function %tmp.11 :loadResource;
+        %tmp.14 = getv ? :Rez;
+        %tmp.15 = getv %tmp.14 :Drawables;
+        %tmp.16 = getv %tmp.15 :stepsImage;
+        %tmp.17 = invoke %tmp.11 %tmp.12(%tmp.16);
+        putv self :stepsImage %tmp.17;
 [ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 19 8 ]
+        %tmp.18 = getm $.Toybox.WatchUi;
+        %tmp.19 = getv function %tmp.18 :loadResource;
+        %tmp.21 = getv ? :Rez;
+        %tmp.22 = getv %tmp.21 :Drawables;
+        %tmp.23 = getv %tmp.22 :trophyImage;
+        %tmp.24 = invoke %tmp.18 %tmp.19(%tmp.23);
+        putv self :trophyImage %tmp.24;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_15_26_stop:
+    }
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 23; ]
+    function onLayout(dc as Dc) as Void {
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_23_40_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 24 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :setLayout;
         %tmp.4 = getv ? :Rez;
@@ -44,67 +72,127 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_18_40_start:
         %tmp.8 = lgetv %dc;
         %tmp.9 = invoke %tmp.5 %tmp.6(%tmp.8);
         invoke %tmp.1 %tmp.2(%tmp.9);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_18_40_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_23_40_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 25; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 30; ]
     function onShow() as Void {
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 29; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 34; ]
     function onUpdate(dc as Dc) as Void {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_29_40_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 32 8 ]
-        %tmp.1 = self;
-        %tmp.2 = getv function %tmp.1 :setClockDisplay;
-        invoke %tmp.1 %tmp.2();
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 33 8 ]
-        %tmp.3 = self;
-        %tmp.4 = getv function %tmp.3 :setBatteryDisplay;
-        invoke %tmp.3 %tmp.4();
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 34 8 ]
-        %tmp.5 = self;
-        %tmp.6 = getv function %tmp.5 :setHeartRateDisplay;
-        invoke %tmp.5 %tmp.6();
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start:
 [ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 36 8 ]
-        %tmp.7 = self;
-        %tmp.8 = getv function %tmp.7 :setStepCount;
-        invoke %tmp.7 %tmp.8();
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 37 8 ]
-        %tmp.9 = self;
-        %tmp.10 = getv function %tmp.9 :setStepGoalPercent;
-        invoke %tmp.9 %tmp.10();
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %deviceHeight.1 = local;
+        %tmp.1 = lgetv %dc;
+        %tmp.2 = getv function %tmp.1 :getHeight;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %deviceHeight.1 %tmp.3;
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 37 2 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %deviceWidth.2 = local;
+        %tmp.4 = lgetv %dc;
+        %tmp.5 = getv function %tmp.4 :getWidth;
+        %tmp.6 = invoke %tmp.4 %tmp.5();
+        lputv %deviceWidth.2 %tmp.6;
 [ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 38 8 ]
-        %tmp.11 = self;
-        %tmp.12 = getv function %tmp.11 :setDate;
-        invoke %tmp.11 %tmp.12();
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %x.3 = local;
+        %tmp.8 = lgetv %deviceWidth.2;
+        %tmp.9 = 0.57;
+        %tmp.10 = mul %tmp.8 %tmp.9;
+        lputv %x.3 %tmp.10;
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %yHeart.4 = local;
+        %tmp.12 = lgetv %deviceHeight.1;
+        %tmp.13 = 0.37;
+        %tmp.14 = mul %tmp.12 %tmp.13;
+        lputv %yHeart.4 %tmp.14;
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %ySteps.5 = local;
+        %tmp.16 = lgetv %deviceHeight.1;
+        %tmp.17 = 0.49;
+        %tmp.18 = mul %tmp.16 %tmp.17;
+        lputv %ySteps.5 %tmp.18;
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop" ]
+        %yTrophy.6 = local;
+        %tmp.20 = lgetv %deviceHeight.1;
+        %tmp.21 = 0.61;
+        %tmp.22 = mul %tmp.20 %tmp.21;
+        lputv %yTrophy.6 %tmp.22;
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 42 8 ]
+        %tmp.23 = self;
+        %tmp.24 = getv function %tmp.23 :setClockDisplay;
+        invoke %tmp.23 %tmp.24();
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 43 8 ]
+        %tmp.25 = self;
+        %tmp.26 = getv function %tmp.25 :setBatteryDisplay;
+        invoke %tmp.25 %tmp.26();
 [ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 44 8 ]
-        %tmp.14 = getv ? :View;
-        %tmp.15 = getv function %tmp.14 :onUpdate;
-        %tmp.17 = lgetv %dc;
-        invoke %tmp.14 %tmp.15(%tmp.17);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_29_40_stop:
+        %tmp.27 = self;
+        %tmp.28 = getv function %tmp.27 :setHeartRateDisplay;
+        invoke %tmp.27 %tmp.28();
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 46 8 ]
+        %tmp.29 = self;
+        %tmp.30 = getv function %tmp.29 :setStepCount;
+        invoke %tmp.29 %tmp.30();
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 47 8 ]
+        %tmp.31 = self;
+        %tmp.32 = getv function %tmp.31 :setStepGoalPercent;
+        invoke %tmp.31 %tmp.32();
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 48 8 ]
+        %tmp.33 = self;
+        %tmp.34 = getv function %tmp.33 :setDate;
+        invoke %tmp.33 %tmp.34();
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 52 8 ]
+        %tmp.36 = getv ? :View;
+        %tmp.37 = getv function %tmp.36 :onUpdate;
+        %tmp.39 = lgetv %dc;
+        invoke %tmp.36 %tmp.37(%tmp.39);
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 53 8 ]
+        %tmp.40 = lgetv %dc;
+        %tmp.41 = getv function %tmp.40 :drawBitmap;
+        %tmp.43 = lgetv %x.3;
+        %tmp.45 = lgetv %yHeart.4;
+        %tmp.47 = getv ? :heartImage;
+        invoke %tmp.40 %tmp.41(%tmp.43, %tmp.45, %tmp.47);
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 54 8 ]
+        %tmp.48 = lgetv %dc;
+        %tmp.49 = getv function %tmp.48 :drawBitmap;
+        %tmp.51 = lgetv %x.3;
+        %tmp.53 = lgetv %ySteps.5;
+        %tmp.55 = getv ? :stepsImage;
+        invoke %tmp.48 %tmp.49(%tmp.51, %tmp.53, %tmp.55);
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 55 8 ]
+        %tmp.56 = lgetv %dc;
+        %tmp.57 = getv function %tmp.56 :drawBitmap;
+        %tmp.59 = lgetv %x.3;
+        %tmp.61 = lgetv %yTrophy.6;
+        %tmp.63 = getv ? :trophyImage;
+        invoke %tmp.56 %tmp.57(%tmp.59, %tmp.61, %tmp.63);
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_34_40_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 51; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 64; ]
     function onHide() as Void {
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 55; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 68; ]
     function onExitSleep() as Void {
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 59; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 72; ]
     function onEnterSleep() as Void {
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 62; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 75; ]
     private
     function setClockDisplay() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 64 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 77 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop" ]
         %clockTime.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getClockTime;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         lputv %clockTime.1 %tmp.3;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 66 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 79 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop" ]
         %hourString.2 = local;
         %tmp.4 = getm $.Toybox.Lang;
         %tmp.5 = getv function %tmp.4 :format;
@@ -116,8 +204,8 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start:
         %tmp.11 = aputv %tmp.10 0 %tmp.9;
         %tmp.12 = invoke %tmp.4 %tmp.5(%tmp.6, %tmp.11);
         lputv %hourString.2 %tmp.12;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 67 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 80 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop" ]
         %minuteString.3 = local;
         %tmp.13 = getm $.Toybox.Lang;
         %tmp.14 = getv function %tmp.13 :format;
@@ -132,8 +220,8 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start:
         %tmp.23 = aputv %tmp.22 0 %tmp.21;
         %tmp.24 = invoke %tmp.13 %tmp.14(%tmp.15, %tmp.23);
         lputv %minuteString.3 %tmp.24;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 69 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 82 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop" ]
         %hourDisplay.4 = local;
         %tmp.26 = getv ? :View;
         %tmp.27 = getv function %tmp.26 :findDrawableById;
@@ -141,8 +229,8 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start:
         %tmp.29 = invoke %tmp.26 %tmp.27(%tmp.28);
         %tmp.30 = as %tmp.29 Text;
         lputv %hourDisplay.4 %tmp.30;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 70 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 83 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop" ]
         %minuteDisplay.5 = local;
         %tmp.32 = getv ? :View;
         %tmp.33 = getv function %tmp.32 :findDrawableById;
@@ -150,32 +238,32 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_start:
         %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
         %tmp.36 = as %tmp.35 Text;
         lputv %minuteDisplay.5 %tmp.36;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 72 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 85 8 ]
         %tmp.37 = lgetv %hourDisplay.4;
         %tmp.38 = getv function %tmp.37 :setText;
         %tmp.40 = lgetv %hourString.2;
         invoke %tmp.37 %tmp.38(%tmp.40);
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 73 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 86 8 ]
         %tmp.41 = lgetv %minuteDisplay.5;
         %tmp.42 = getv function %tmp.41 :setText;
         %tmp.44 = lgetv %minuteString.3;
         invoke %tmp.41 %tmp.42(%tmp.44);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_62_39_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_75_39_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 78; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 91; ]
     private
     function setBatteryDisplay() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 80 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 93 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_stop" ]
         %battery.1 = local;
         %tmp.1 = getm $.Toybox.System;
         %tmp.2 = getv function %tmp.1 :getSystemStats;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :battery;
         lputv %battery.1 %tmp.4;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 81 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 94 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_stop" ]
         %batteryDisplay.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -183,7 +271,7 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_start:
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %batteryDisplay.2 %tmp.10;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 82 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 95 8 ]
         %tmp.11 = lgetv %batteryDisplay.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.13 = lgetv %battery.1;
@@ -193,19 +281,19 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_start:
         %tmp.17 = "%";
         %tmp.18 = add %tmp.16 %tmp.17;
         invoke %tmp.11 %tmp.12(%tmp.18);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_78_41_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_91_41_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 86; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 99; ]
     private
     function setHeartRateDisplay() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 88 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 101 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_stop" ]
         %heartrate.1 = local;
         %tmp.1 = "";
         lputv %heartrate.1 %tmp.1;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 89 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 102 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_stop" ]
         %hrIterator.2 = local;
         %tmp.2 = getm $.Toybox.ActivityMonitor;
         %tmp.3 = getv function %tmp.2 :getHeartRateHistory;
@@ -213,53 +301,53 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start:
         %tmp.5 = false;
         %tmp.6 = invoke %tmp.2 %tmp.3(%tmp.4, %tmp.5);
         lputv %hrIterator.2 %tmp.6;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 90 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 103 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_stop" ]
         %currentHeartRate.3 = local;
         %tmp.7 = lgetv %hrIterator.2;
         %tmp.8 = getv function %tmp.7 :next;
         %tmp.9 = invoke %tmp.7 %tmp.8();
         %tmp.10 = getv %tmp.9 :heartRate;
         lputv %currentHeartRate.3 %tmp.10;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 93 8 ]
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_stmt:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 106 8 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_8_if_stmt:
         %tmp.11 = null;
         %tmp.13 = lgetv %currentHeartRate.3;
         %tmp.14 = ne %tmp.11 %tmp.13;
-        bf %tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_true:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_38_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 94 12 ]
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_stmt:
+        bf %tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_8_if_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_8_if_true:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_38_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 107 12 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_stmt:
         %tmp.16 = lgetv %currentHeartRate.3;
         %tmp.17 = as %tmp.16 { (!Null) };
         %tmp.18 = getm $.Toybox.ActivityMonitor;
         %tmp.19 = getv %tmp.18 :INVALID_HR_SAMPLE;
         %tmp.20 = ne %tmp.17 %tmp.19;
-        bf %tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_false;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_true:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_71_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 95 16 ]
+        bf %tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_false;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_true:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_71_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 108 16 ]
         %tmp.21 = lgetv %currentHeartRate.3;
         %tmp.22 = as %tmp.21 { (!Null) };
         %tmp.23 = getv function %tmp.22 :format;
         %tmp.24 = "%d";
         %tmp.25 = invoke %tmp.22 %tmp.23(%tmp.24);
         lputv %heartrate.1 %tmp.25;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_71_stop:
-        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_false:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_97_17_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 98 16 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_71_stop:
+        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_false:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_110_17_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 111 16 ]
         %tmp.26 = "--";
         lputv %heartrate.1 %tmp.26;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_97_17_stop:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_94_12_if_end:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_38_stop:
-        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_end:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 102 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_110_17_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_12_if_end:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_38_stop:
+        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_8_if_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_106_8_if_end:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 115 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_stop" ]
         %heartRateDisplay.4 = local;
         %tmp.28 = getv ? :View;
         %tmp.29 = getv function %tmp.28 :findDrawableById;
@@ -267,27 +355,27 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_93_8_if_end:
         %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
         %tmp.32 = as %tmp.31 Text;
         lputv %heartRateDisplay.4 %tmp.32;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 103 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 116 8 ]
         %tmp.33 = lgetv %heartRateDisplay.4;
         %tmp.34 = getv function %tmp.33 :setText;
         %tmp.36 = lgetv %heartrate.1;
         invoke %tmp.33 %tmp.34(%tmp.36);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_86_43_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_99_43_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 107; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 120; ]
     private
     function setWeatherDisplay() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 109 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 122 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_stop" ]
         %weather.1 = local;
         %tmp.1 = getm $.Toybox.Weather;
         %tmp.2 = getv function %tmp.1 :getCurrentConditions;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :temperature;
         lputv %weather.1 %tmp.4;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 110 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 123 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_stop" ]
         %weatherDisplay.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -295,7 +383,7 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_start:
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %weatherDisplay.2 %tmp.10;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 111 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 124 8 ]
         %tmp.11 = lgetv %weatherDisplay.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.13 = lgetv %weather.1;
@@ -303,22 +391,22 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_start:
         %tmp.15 = "%d";
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         invoke %tmp.11 %tmp.12(%tmp.16);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_107_41_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_120_41_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 115; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 128; ]
     private
     function setStepCount() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 117 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 130 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_stop" ]
         %stepCount.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :steps;
         lputv %stepCount.1 %tmp.4;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 118 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 131 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_stop" ]
         %stepCountDisplay.2 = local;
         %tmp.6 = getv ? :View;
         %tmp.7 = getv function %tmp.6 :findDrawableById;
@@ -326,7 +414,7 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_start:
         %tmp.9 = invoke %tmp.6 %tmp.7(%tmp.8);
         %tmp.10 = as %tmp.9 Text;
         lputv %stepCountDisplay.2 %tmp.10;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 119 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 132 8 ]
         %tmp.11 = lgetv %stepCountDisplay.2;
         %tmp.12 = getv function %tmp.11 :setText;
         %tmp.13 = lgetv %stepCount.1;
@@ -334,53 +422,53 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_start:
         %tmp.15 = "%d";
         %tmp.16 = invoke %tmp.13 %tmp.14(%tmp.15);
         invoke %tmp.11 %tmp.12(%tmp.16);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_115_36_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_128_36_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 123; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 136; ]
     private
     function setStepGoalPercent() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 125 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 138 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_stop" ]
         %steps.1 = local;
         %tmp.1 = getm $.Toybox.ActivityMonitor;
         %tmp.2 = getv function %tmp.1 :getInfo;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv %tmp.3 :steps;
         lputv %steps.1 %tmp.4;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 126 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 139 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_stop" ]
         %stepGoal.2 = local;
         %tmp.5 = getm $.Toybox.ActivityMonitor;
         %tmp.6 = getv function %tmp.5 :getInfo;
         %tmp.7 = invoke %tmp.5 %tmp.6();
         %tmp.8 = getv %tmp.7 :stepGoal;
         lputv %stepGoal.2 %tmp.8;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 127 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 140 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_stop" ]
         %percent.3 = local;
         %tmp.9 = 0;
         lputv %percent.3 %tmp.9;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 129 8 ]
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_stmt:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_12_begin:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 142 8 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_8_if_stmt:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_12_begin:
         %tmp.11 = lgetv %steps.1;
         %tmp.12 = 0;
         %tmp.13 = gt %tmp.11 %tmp.12;
         %tmp.14 = dup %tmp.13;
-        bf %tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_25_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_25_true:
+        bf %tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_25_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_25_true:
         %tmp.16 = lgetv %stepGoal.2;
         %tmp.17 = null;
         %tmp.18 = ne %tmp.16 %tmp.17;
         %tmp.19 = and %tmp.13 %tmp.18;
         push %tmp.19;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_25_end:
-        %tmp.20 = phi [%tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_12_begin] [%tmp.19 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_25_true] [%tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_25_end];
-        bf %tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_true:
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_43_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 130 12 ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_25_end:
+        %tmp.20 = phi [%tmp.14 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_12_begin] [%tmp.19 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_25_true] [%tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_25_end];
+        bf %tmp.20 @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_8_if_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_8_if_true:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_43_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 143 12 ]
         %tmp.21 = lgetv %stepGoal.2;
         %tmp.22 = as %tmp.21 { (!Null) };
         %tmp.23 = getv function %tmp.22 :toFloat;
@@ -392,11 +480,11 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_43_start:
         %tmp.29 = 100f;
         %tmp.30 = mul %tmp.28 %tmp.29;
         lputv %percent.3 %tmp.30;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_43_stop:
-        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_end;
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_end:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 133 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_43_stop:
+        goto @_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_8_if_end;
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_142_8_if_end:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 146 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_stop" ]
         %stepGoalPercent.4 = local;
         %tmp.32 = getv ? :View;
         %tmp.33 = getv function %tmp.32 :findDrawableById;
@@ -404,7 +492,7 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_end:
         %tmp.35 = invoke %tmp.32 %tmp.33(%tmp.34);
         %tmp.36 = as %tmp.35 Text;
         lputv %stepGoalPercent.4 %tmp.36;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 134 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 147 8 ]
         %tmp.37 = lgetv %stepGoalPercent.4;
         %tmp.38 = getv function %tmp.37 :setText;
         %tmp.39 = lgetv %percent.3;
@@ -414,14 +502,14 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_129_8_if_end:
         %tmp.43 = "%";
         %tmp.44 = add %tmp.42 %tmp.43;
         invoke %tmp.37 %tmp.38(%tmp.44);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_123_42_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_136_42_stop:
     }
-    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 138; ]
+    [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 151; ]
     private
     function setDate() {
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start:
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 140 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_stop" ]
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_start:
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 153 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_stop" ]
         %today.1 = local;
         %tmp.1 = getm $.Toybox.Time;
         %tmp.2 = getv %tmp.1 :Gregorian;
@@ -433,8 +521,8 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start:
         %tmp.8 = getv %tmp.7 :FORMAT_MEDIUM;
         %tmp.9 = invoke %tmp.2 %tmp.3(%tmp.6, %tmp.8);
         lputv %today.1 %tmp.9;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 141 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 154 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_stop" ]
         %dateString.2 = local;
         %tmp.10 = getm $.Toybox.Lang;
         %tmp.11 = getv function %tmp.10 :format;
@@ -454,8 +542,8 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start:
         %tmp.25 = aputv %tmp.24 2 %tmp.23;
         %tmp.26 = invoke %tmp.10 %tmp.11(%tmp.12, %tmp.25);
         lputv %dateString.2 %tmp.26;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 146 8 ]
-        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_stop" ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 159 8 ]
+        [ "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_start" "_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_stop" ]
         %dateDisplay.3 = local;
         %tmp.28 = getv ? :View;
         %tmp.29 = getv function %tmp.28 :findDrawableById;
@@ -463,12 +551,12 @@ _home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_start:
         %tmp.31 = invoke %tmp.28 %tmp.29(%tmp.30);
         %tmp.32 = as %tmp.31 Text;
         lputv %dateDisplay.3 %tmp.32;
-[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 147 8 ]
+[ "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" 160 8 ]
         %tmp.33 = lgetv %dateDisplay.3;
         %tmp.34 = getv function %tmp.33 :setText;
         %tmp.36 = lgetv %dateString.2;
         invoke %tmp.33 %tmp.34(%tmp.36);
-_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_138_31_stop:
+_home_will_WillsWatchFace_source_WillsWatchFaceView_mc_151_31_stop:
     }
 }
 [ @file = "/home/will/WillsWatchFace/source/WillsWatchFaceView.mc"; @line = 1; ]

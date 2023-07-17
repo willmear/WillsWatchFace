@@ -1,17 +1,18 @@
 <layout id="WatchFace">
 
-    <!-- <drawable id="Background" class="Background">
-    	<param name="topColor">0xFF0055</param>
-    	<param name="bottomColor">0xFF5500</param>
-    </drawable> -->
+    <drawable id="Background" class="Background">
+    	<param name="borderColour">0xFFFFFF</param>
+    </drawable>
 
-    <label id="timeDisplayHour" x="center" y="40%" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
-    <label id="timeDisplayMinute" x="center" y="50%" font="Gfx.FONT_LARGE" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
+    <label id="dateDisplay" x="center" y="13%" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
 
-    <label id="heartRateDisplay" x="center" y="top" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
+    <label id="timeDisplayHour" x="30%" y="25%" font="@Fonts.roboto" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
+    <label id="timeDisplayMinute" x="30%" y="50%" font="@Fonts.roboto" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE" />
+
+    <label id="heartRateDisplay" x="75%" y="35%" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
+    <label id="stepsDisplay" x="75%" y="47%" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
+    <label id="stepGoalDisplay" x="75%" y="58%" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
+
     <label id="batteryDisplay" x="center" y="bottom" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
     <!-- <label id="weatherDisplay" x="left" y="center" font="Graphics.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_BLUE"/> -->
-    <label id="stepsDisplay" x="left" y="center" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
-    <label id="stepGoalDisplay" x="right" y="center" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
-    <label id="dateDisplay" x="center" y="30%" font="Gfx.FONT_SMALL" justification="Gfx.TEXT_JUSTIFY_CENTER" color="Gfx.COLOR_WHITE"/>
 </layout>

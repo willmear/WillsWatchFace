@@ -19,354 +19,397 @@ module Rez {
         <init> {
         }
         [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 9; @position = 27; initialized = true; ]
+        var heartImage as Symbol;
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 10; @position = 27; initialized = true; ]
+        var stepsImage as Symbol;
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 11; @position = 27; initialized = true; ]
+        var trophyImage as Symbol;
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 12; @position = 27; initialized = true; ]
         var LauncherIcon as Symbol;
     }
-    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 12; ]
-    module Fonts {
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 12; ]
-        <init> {
-        }
-    }
     [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 15; ]
-    module JsonData {
+    module Fonts {
         [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 15; ]
         <init> {
         }
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 16; @position = 27; initialized = true; ]
+        var roboto as Symbol;
     }
-    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 18; ]
-    module Layouts {
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 18; ]
+    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 19; ]
+    module JsonData {
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 19; ]
         <init> {
         }
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 19; ]
+    }
+    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 22; ]
+    module Layouts {
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 22; ]
+        <init> {
+        }
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 23; ]
         function WatchFace(dc as Graphics.Dc) as Array<WatchUi.Drawable> {
-_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start:
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 20 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_timeDisplayHour.1 = local;
-            %tmp.3 = getm $.Toybox.WatchUi;
-            %tmp.4 = getv function ? %tmp.3 :Text;
-            %tmp.5 = newd 6;
-            %tmp.7 = const :identifier;
-            %tmp.8 = "timeDisplayHour";
-            %tmp.9 = dup %tmp.5;
-            %tmp.10 = aputv %tmp.9 %tmp.7 %tmp.8;
-            %tmp.12 = const :color;
-            %tmp.13 = getm $.Toybox.Graphics;
-            %tmp.14 = getv %tmp.13 :COLOR_WHITE;
-            %tmp.15 = dup %tmp.10;
-            %tmp.16 = aputv %tmp.15 %tmp.12 %tmp.14;
-            %tmp.18 = const :locX;
-            %tmp.19 = 240;
-            %tmp.20 = 0.5;
-            %tmp.21 = mul %tmp.19 %tmp.20;
-            %tmp.22 = dup %tmp.16;
-            %tmp.23 = aputv %tmp.22 %tmp.18 %tmp.21;
-            %tmp.25 = const :locY;
-            %tmp.26 = 240;
-            %tmp.27 = 40;
-            %tmp.28 = 100.0;
-            %tmp.29 = div %tmp.27 %tmp.28;
-            %tmp.30 = mul %tmp.26 %tmp.29;
-            %tmp.31 = dup %tmp.23;
-            %tmp.32 = aputv %tmp.31 %tmp.25 %tmp.30;
-            %tmp.34 = const :justification;
-            %tmp.35 = getm $.Toybox.Graphics;
-            %tmp.36 = getv %tmp.35 :TEXT_JUSTIFY_CENTER;
-            %tmp.37 = dup %tmp.32;
-            %tmp.38 = aputv %tmp.37 %tmp.34 %tmp.36;
-            %tmp.40 = const :font;
-            %tmp.41 = getm $.Toybox.Graphics;
-            %tmp.42 = getv %tmp.41 :FONT_LARGE;
-            %tmp.43 = dup %tmp.38;
-            %tmp.44 = aputv %tmp.43 %tmp.40 %tmp.42;
-            %tmp.1 = newc %tmp.4 (%tmp.44);
-            lputv %rez_cmp_local_text_timeDisplayHour.1 %tmp.1;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 22 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_timeDisplayMinute.2 = local;
-            %tmp.47 = getm $.Toybox.WatchUi;
-            %tmp.48 = getv function ? %tmp.47 :Text;
-            %tmp.49 = newd 6;
-            %tmp.51 = const :identifier;
-            %tmp.52 = "timeDisplayMinute";
-            %tmp.53 = dup %tmp.49;
-            %tmp.54 = aputv %tmp.53 %tmp.51 %tmp.52;
-            %tmp.56 = const :color;
-            %tmp.57 = getm $.Toybox.Graphics;
-            %tmp.58 = getv %tmp.57 :COLOR_WHITE;
-            %tmp.59 = dup %tmp.54;
-            %tmp.60 = aputv %tmp.59 %tmp.56 %tmp.58;
-            %tmp.62 = const :locX;
-            %tmp.63 = 240;
-            %tmp.64 = 0.5;
-            %tmp.65 = mul %tmp.63 %tmp.64;
-            %tmp.66 = dup %tmp.60;
-            %tmp.67 = aputv %tmp.66 %tmp.62 %tmp.65;
-            %tmp.69 = const :locY;
-            %tmp.70 = 240;
-            %tmp.71 = 50;
-            %tmp.72 = 100.0;
-            %tmp.73 = div %tmp.71 %tmp.72;
-            %tmp.74 = mul %tmp.70 %tmp.73;
-            %tmp.75 = dup %tmp.67;
-            %tmp.76 = aputv %tmp.75 %tmp.69 %tmp.74;
-            %tmp.78 = const :justification;
-            %tmp.79 = getm $.Toybox.Graphics;
-            %tmp.80 = getv %tmp.79 :TEXT_JUSTIFY_CENTER;
-            %tmp.81 = dup %tmp.76;
-            %tmp.82 = aputv %tmp.81 %tmp.78 %tmp.80;
-            %tmp.84 = const :font;
-            %tmp.85 = getm $.Toybox.Graphics;
-            %tmp.86 = getv %tmp.85 :FONT_LARGE;
-            %tmp.87 = dup %tmp.82;
-            %tmp.88 = aputv %tmp.87 %tmp.84 %tmp.86;
-            %tmp.45 = newc %tmp.48 (%tmp.88);
-            lputv %rez_cmp_local_text_timeDisplayMinute.2 %tmp.45;
+_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
 [ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 24 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_heartRateDisplay.3 = local;
-            %tmp.91 = getm $.Toybox.WatchUi;
-            %tmp.92 = getv function ? %tmp.91 :Text;
-            %tmp.93 = newd 6;
-            %tmp.95 = const :identifier;
-            %tmp.96 = "heartRateDisplay";
-            %tmp.97 = dup %tmp.93;
-            %tmp.98 = aputv %tmp.97 %tmp.95 %tmp.96;
-            %tmp.100 = const :color;
-            %tmp.101 = getm $.Toybox.Graphics;
-            %tmp.102 = getv %tmp.101 :COLOR_WHITE;
-            %tmp.103 = dup %tmp.98;
-            %tmp.104 = aputv %tmp.103 %tmp.100 %tmp.102;
-            %tmp.106 = const :locX;
-            %tmp.107 = 240;
-            %tmp.108 = 0.5;
-            %tmp.109 = mul %tmp.107 %tmp.108;
-            %tmp.110 = dup %tmp.104;
-            %tmp.111 = aputv %tmp.110 %tmp.106 %tmp.109;
-            %tmp.113 = const :locY;
-            %tmp.114 = getm $.Toybox.WatchUi;
-            %tmp.115 = getv %tmp.114 :LAYOUT_VALIGN_TOP;
-            %tmp.116 = dup %tmp.111;
-            %tmp.117 = aputv %tmp.116 %tmp.113 %tmp.115;
-            %tmp.119 = const :justification;
-            %tmp.120 = getm $.Toybox.Graphics;
-            %tmp.121 = getv %tmp.120 :TEXT_JUSTIFY_CENTER;
-            %tmp.122 = dup %tmp.117;
-            %tmp.123 = aputv %tmp.122 %tmp.119 %tmp.121;
-            %tmp.125 = const :font;
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %local_Rez_Fonts_roboto.1 = local;
+            %tmp.1 = getm $.Toybox.WatchUi;
+            %tmp.2 = getv function %tmp.1 :loadResource;
+            %tmp.3 = getm $;
+            %tmp.4 = getv %tmp.3 :Rez;
+            %tmp.5 = getv %tmp.4 :Fonts;
+            %tmp.6 = getv %tmp.5 :roboto;
+            %tmp.7 = invoke %tmp.1 %tmp.2(%tmp.6);
+            %tmp.8 = as %tmp.7 WatchUi.FontResource;
+            lputv %local_Rez_Fonts_roboto.1 %tmp.8;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 25 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_custom_drawable_Background.2 = local;
+            %tmp.12 = getv ? :Background;
+            %tmp.13 = newd 2;
+            %tmp.15 = const :identifier;
+            %tmp.16 = "Background";
+            %tmp.17 = dup %tmp.13;
+            %tmp.18 = aputv %tmp.17 %tmp.15 %tmp.16;
+            %tmp.20 = const :borderColour;
+            %tmp.21 = 0xFFFFFF;
+            %tmp.22 = dup %tmp.18;
+            %tmp.23 = aputv %tmp.22 %tmp.20 %tmp.21;
+            %tmp.9 = newc %tmp.12 (%tmp.23);
+            lputv %rez_cmp_local_custom_drawable_Background.2 %tmp.9;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 27 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_dateDisplay.3 = local;
+            %tmp.26 = getm $.Toybox.WatchUi;
+            %tmp.27 = getv function ? %tmp.26 :Text;
+            %tmp.28 = newd 6;
+            %tmp.30 = const :identifier;
+            %tmp.31 = "dateDisplay";
+            %tmp.32 = dup %tmp.28;
+            %tmp.33 = aputv %tmp.32 %tmp.30 %tmp.31;
+            %tmp.35 = const :color;
+            %tmp.36 = getm $.Toybox.Graphics;
+            %tmp.37 = getv %tmp.36 :COLOR_WHITE;
+            %tmp.38 = dup %tmp.33;
+            %tmp.39 = aputv %tmp.38 %tmp.35 %tmp.37;
+            %tmp.41 = const :locX;
+            %tmp.42 = 240;
+            %tmp.43 = 0.5;
+            %tmp.44 = mul %tmp.42 %tmp.43;
+            %tmp.45 = dup %tmp.39;
+            %tmp.46 = aputv %tmp.45 %tmp.41 %tmp.44;
+            %tmp.48 = const :locY;
+            %tmp.49 = 240;
+            %tmp.50 = 13;
+            %tmp.51 = 100.0;
+            %tmp.52 = div %tmp.50 %tmp.51;
+            %tmp.53 = mul %tmp.49 %tmp.52;
+            %tmp.54 = dup %tmp.46;
+            %tmp.55 = aputv %tmp.54 %tmp.48 %tmp.53;
+            %tmp.57 = const :justification;
+            %tmp.58 = getm $.Toybox.Graphics;
+            %tmp.59 = getv %tmp.58 :TEXT_JUSTIFY_CENTER;
+            %tmp.60 = dup %tmp.55;
+            %tmp.61 = aputv %tmp.60 %tmp.57 %tmp.59;
+            %tmp.63 = const :font;
+            %tmp.64 = getm $.Toybox.Graphics;
+            %tmp.65 = getv %tmp.64 :FONT_SMALL;
+            %tmp.66 = dup %tmp.61;
+            %tmp.67 = aputv %tmp.66 %tmp.63 %tmp.65;
+            %tmp.24 = newc %tmp.27 (%tmp.67);
+            lputv %rez_cmp_local_text_dateDisplay.3 %tmp.24;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 29 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_timeDisplayHour.4 = local;
+            %tmp.70 = getm $.Toybox.WatchUi;
+            %tmp.71 = getv function ? %tmp.70 :Text;
+            %tmp.72 = newd 6;
+            %tmp.74 = const :identifier;
+            %tmp.75 = "timeDisplayHour";
+            %tmp.76 = dup %tmp.72;
+            %tmp.77 = aputv %tmp.76 %tmp.74 %tmp.75;
+            %tmp.79 = const :color;
+            %tmp.80 = getm $.Toybox.Graphics;
+            %tmp.81 = getv %tmp.80 :COLOR_WHITE;
+            %tmp.82 = dup %tmp.77;
+            %tmp.83 = aputv %tmp.82 %tmp.79 %tmp.81;
+            %tmp.85 = const :locX;
+            %tmp.86 = 240;
+            %tmp.87 = 30;
+            %tmp.88 = 100.0;
+            %tmp.89 = div %tmp.87 %tmp.88;
+            %tmp.90 = mul %tmp.86 %tmp.89;
+            %tmp.91 = dup %tmp.83;
+            %tmp.92 = aputv %tmp.91 %tmp.85 %tmp.90;
+            %tmp.94 = const :locY;
+            %tmp.95 = 240;
+            %tmp.96 = 25;
+            %tmp.97 = 100.0;
+            %tmp.98 = div %tmp.96 %tmp.97;
+            %tmp.99 = mul %tmp.95 %tmp.98;
+            %tmp.100 = dup %tmp.92;
+            %tmp.101 = aputv %tmp.100 %tmp.94 %tmp.99;
+            %tmp.103 = const :justification;
+            %tmp.104 = getm $.Toybox.Graphics;
+            %tmp.105 = getv %tmp.104 :TEXT_JUSTIFY_CENTER;
+            %tmp.106 = dup %tmp.101;
+            %tmp.107 = aputv %tmp.106 %tmp.103 %tmp.105;
+            %tmp.109 = const :font;
+            %tmp.111 = lgetv %local_Rez_Fonts_roboto.1;
+            %tmp.112 = dup %tmp.107;
+            %tmp.113 = aputv %tmp.112 %tmp.109 %tmp.111;
+            %tmp.68 = newc %tmp.71 (%tmp.113);
+            lputv %rez_cmp_local_text_timeDisplayHour.4 %tmp.68;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 31 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_timeDisplayMinute.5 = local;
+            %tmp.116 = getm $.Toybox.WatchUi;
+            %tmp.117 = getv function ? %tmp.116 :Text;
+            %tmp.118 = newd 6;
+            %tmp.120 = const :identifier;
+            %tmp.121 = "timeDisplayMinute";
+            %tmp.122 = dup %tmp.118;
+            %tmp.123 = aputv %tmp.122 %tmp.120 %tmp.121;
+            %tmp.125 = const :color;
             %tmp.126 = getm $.Toybox.Graphics;
-            %tmp.127 = getv %tmp.126 :FONT_SMALL;
+            %tmp.127 = getv %tmp.126 :COLOR_WHITE;
             %tmp.128 = dup %tmp.123;
             %tmp.129 = aputv %tmp.128 %tmp.125 %tmp.127;
-            %tmp.89 = newc %tmp.92 (%tmp.129);
-            lputv %rez_cmp_local_text_heartRateDisplay.3 %tmp.89;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 26 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_batteryDisplay.4 = local;
-            %tmp.132 = getm $.Toybox.WatchUi;
-            %tmp.133 = getv function ? %tmp.132 :Text;
-            %tmp.134 = newd 6;
-            %tmp.136 = const :identifier;
-            %tmp.137 = "batteryDisplay";
-            %tmp.138 = dup %tmp.134;
-            %tmp.139 = aputv %tmp.138 %tmp.136 %tmp.137;
-            %tmp.141 = const :color;
-            %tmp.142 = getm $.Toybox.Graphics;
-            %tmp.143 = getv %tmp.142 :COLOR_WHITE;
-            %tmp.144 = dup %tmp.139;
-            %tmp.145 = aputv %tmp.144 %tmp.141 %tmp.143;
-            %tmp.147 = const :locX;
-            %tmp.148 = 240;
-            %tmp.149 = 0.5;
-            %tmp.150 = mul %tmp.148 %tmp.149;
-            %tmp.151 = dup %tmp.145;
-            %tmp.152 = aputv %tmp.151 %tmp.147 %tmp.150;
-            %tmp.154 = const :locY;
-            %tmp.155 = getm $.Toybox.WatchUi;
-            %tmp.156 = getv %tmp.155 :LAYOUT_VALIGN_BOTTOM;
-            %tmp.157 = dup %tmp.152;
-            %tmp.158 = aputv %tmp.157 %tmp.154 %tmp.156;
-            %tmp.160 = const :justification;
-            %tmp.161 = getm $.Toybox.Graphics;
-            %tmp.162 = getv %tmp.161 :TEXT_JUSTIFY_CENTER;
-            %tmp.163 = dup %tmp.158;
-            %tmp.164 = aputv %tmp.163 %tmp.160 %tmp.162;
-            %tmp.166 = const :font;
-            %tmp.167 = getm $.Toybox.Graphics;
-            %tmp.168 = getv %tmp.167 :FONT_SMALL;
-            %tmp.169 = dup %tmp.164;
-            %tmp.170 = aputv %tmp.169 %tmp.166 %tmp.168;
-            %tmp.130 = newc %tmp.133 (%tmp.170);
-            lputv %rez_cmp_local_text_batteryDisplay.4 %tmp.130;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 28 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_stepsDisplay.5 = local;
-            %tmp.173 = getm $.Toybox.WatchUi;
-            %tmp.174 = getv function ? %tmp.173 :Text;
-            %tmp.175 = newd 6;
-            %tmp.177 = const :identifier;
-            %tmp.178 = "stepsDisplay";
-            %tmp.179 = dup %tmp.175;
-            %tmp.180 = aputv %tmp.179 %tmp.177 %tmp.178;
-            %tmp.182 = const :color;
-            %tmp.183 = getm $.Toybox.Graphics;
-            %tmp.184 = getv %tmp.183 :COLOR_WHITE;
-            %tmp.185 = dup %tmp.180;
-            %tmp.186 = aputv %tmp.185 %tmp.182 %tmp.184;
-            %tmp.188 = const :locX;
-            %tmp.189 = getm $.Toybox.WatchUi;
-            %tmp.190 = getv %tmp.189 :LAYOUT_HALIGN_LEFT;
-            %tmp.191 = dup %tmp.186;
-            %tmp.192 = aputv %tmp.191 %tmp.188 %tmp.190;
-            %tmp.194 = const :locY;
-            %tmp.195 = 240;
-            %tmp.196 = lgetv %dc;
-            %tmp.197 = getv function %tmp.196 :getFontHeight;
-            %tmp.198 = getm $.Toybox.Graphics;
-            %tmp.199 = getv %tmp.198 :FONT_SMALL;
-            %tmp.200 = invoke %tmp.196 %tmp.197(%tmp.199);
-            %tmp.201 = sub %tmp.195 %tmp.200;
-            %tmp.202 = 0.5;
-            %tmp.203 = mul %tmp.201 %tmp.202;
-            %tmp.204 = dup %tmp.192;
-            %tmp.205 = aputv %tmp.204 %tmp.194 %tmp.203;
-            %tmp.207 = const :justification;
-            %tmp.208 = getm $.Toybox.Graphics;
-            %tmp.209 = getv %tmp.208 :TEXT_JUSTIFY_CENTER;
-            %tmp.210 = dup %tmp.205;
-            %tmp.211 = aputv %tmp.210 %tmp.207 %tmp.209;
-            %tmp.213 = const :font;
-            %tmp.214 = getm $.Toybox.Graphics;
-            %tmp.215 = getv %tmp.214 :FONT_SMALL;
-            %tmp.216 = dup %tmp.211;
-            %tmp.217 = aputv %tmp.216 %tmp.213 %tmp.215;
-            %tmp.171 = newc %tmp.174 (%tmp.217);
-            lputv %rez_cmp_local_text_stepsDisplay.5 %tmp.171;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 30 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_stepGoalDisplay.6 = local;
-            %tmp.220 = getm $.Toybox.WatchUi;
-            %tmp.221 = getv function ? %tmp.220 :Text;
-            %tmp.222 = newd 6;
-            %tmp.224 = const :identifier;
-            %tmp.225 = "stepGoalDisplay";
-            %tmp.226 = dup %tmp.222;
-            %tmp.227 = aputv %tmp.226 %tmp.224 %tmp.225;
-            %tmp.229 = const :color;
-            %tmp.230 = getm $.Toybox.Graphics;
-            %tmp.231 = getv %tmp.230 :COLOR_WHITE;
-            %tmp.232 = dup %tmp.227;
-            %tmp.233 = aputv %tmp.232 %tmp.229 %tmp.231;
-            %tmp.235 = const :locX;
-            %tmp.236 = getm $.Toybox.WatchUi;
-            %tmp.237 = getv %tmp.236 :LAYOUT_HALIGN_RIGHT;
-            %tmp.238 = dup %tmp.233;
-            %tmp.239 = aputv %tmp.238 %tmp.235 %tmp.237;
-            %tmp.241 = const :locY;
-            %tmp.242 = 240;
-            %tmp.243 = lgetv %dc;
-            %tmp.244 = getv function %tmp.243 :getFontHeight;
-            %tmp.245 = getm $.Toybox.Graphics;
-            %tmp.246 = getv %tmp.245 :FONT_SMALL;
-            %tmp.247 = invoke %tmp.243 %tmp.244(%tmp.246);
-            %tmp.248 = sub %tmp.242 %tmp.247;
-            %tmp.249 = 0.5;
-            %tmp.250 = mul %tmp.248 %tmp.249;
-            %tmp.251 = dup %tmp.239;
-            %tmp.252 = aputv %tmp.251 %tmp.241 %tmp.250;
-            %tmp.254 = const :justification;
-            %tmp.255 = getm $.Toybox.Graphics;
-            %tmp.256 = getv %tmp.255 :TEXT_JUSTIFY_CENTER;
-            %tmp.257 = dup %tmp.252;
-            %tmp.258 = aputv %tmp.257 %tmp.254 %tmp.256;
-            %tmp.260 = const :font;
-            %tmp.261 = getm $.Toybox.Graphics;
-            %tmp.262 = getv %tmp.261 :FONT_SMALL;
-            %tmp.263 = dup %tmp.258;
-            %tmp.264 = aputv %tmp.263 %tmp.260 %tmp.262;
-            %tmp.218 = newc %tmp.221 (%tmp.264);
-            lputv %rez_cmp_local_text_stepGoalDisplay.6 %tmp.218;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 32 12 ]
-            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop" ]
-            %rez_cmp_local_text_dateDisplay.7 = local;
-            %tmp.267 = getm $.Toybox.WatchUi;
-            %tmp.268 = getv function ? %tmp.267 :Text;
-            %tmp.269 = newd 6;
-            %tmp.271 = const :identifier;
-            %tmp.272 = "dateDisplay";
-            %tmp.273 = dup %tmp.269;
-            %tmp.274 = aputv %tmp.273 %tmp.271 %tmp.272;
-            %tmp.276 = const :color;
-            %tmp.277 = getm $.Toybox.Graphics;
-            %tmp.278 = getv %tmp.277 :COLOR_WHITE;
-            %tmp.279 = dup %tmp.274;
-            %tmp.280 = aputv %tmp.279 %tmp.276 %tmp.278;
-            %tmp.282 = const :locX;
-            %tmp.283 = 240;
-            %tmp.284 = 0.5;
-            %tmp.285 = mul %tmp.283 %tmp.284;
-            %tmp.286 = dup %tmp.280;
-            %tmp.287 = aputv %tmp.286 %tmp.282 %tmp.285;
-            %tmp.289 = const :locY;
-            %tmp.290 = 240;
-            %tmp.291 = 30;
-            %tmp.292 = 100.0;
-            %tmp.293 = div %tmp.291 %tmp.292;
-            %tmp.294 = mul %tmp.290 %tmp.293;
-            %tmp.295 = dup %tmp.287;
-            %tmp.296 = aputv %tmp.295 %tmp.289 %tmp.294;
-            %tmp.298 = const :justification;
-            %tmp.299 = getm $.Toybox.Graphics;
-            %tmp.300 = getv %tmp.299 :TEXT_JUSTIFY_CENTER;
-            %tmp.301 = dup %tmp.296;
-            %tmp.302 = aputv %tmp.301 %tmp.298 %tmp.300;
-            %tmp.304 = const :font;
-            %tmp.305 = getm $.Toybox.Graphics;
-            %tmp.306 = getv %tmp.305 :FONT_SMALL;
-            %tmp.307 = dup %tmp.302;
-            %tmp.308 = aputv %tmp.307 %tmp.304 %tmp.306;
-            %tmp.265 = newc %tmp.268 (%tmp.308);
-            lputv %rez_cmp_local_text_dateDisplay.7 %tmp.265;
-[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 34 12 ]
-            %tmp.309 = newa Array<WatchUi.Drawable> 7;
-            %tmp.311 = lgetv %rez_cmp_local_text_timeDisplayHour.1;
-            %tmp.312 = dup %tmp.309;
-            %tmp.313 = aputv %tmp.312 0 %tmp.311;
-            %tmp.315 = lgetv %rez_cmp_local_text_timeDisplayMinute.2;
-            %tmp.316 = dup %tmp.313;
-            %tmp.317 = aputv %tmp.316 1 %tmp.315;
-            %tmp.319 = lgetv %rez_cmp_local_text_heartRateDisplay.3;
-            %tmp.320 = dup %tmp.317;
-            %tmp.321 = aputv %tmp.320 2 %tmp.319;
-            %tmp.323 = lgetv %rez_cmp_local_text_batteryDisplay.4;
-            %tmp.324 = dup %tmp.321;
-            %tmp.325 = aputv %tmp.324 3 %tmp.323;
-            %tmp.327 = lgetv %rez_cmp_local_text_stepsDisplay.5;
-            %tmp.328 = dup %tmp.325;
-            %tmp.329 = aputv %tmp.328 4 %tmp.327;
-            %tmp.331 = lgetv %rez_cmp_local_text_stepGoalDisplay.6;
-            %tmp.332 = dup %tmp.329;
-            %tmp.333 = aputv %tmp.332 5 %tmp.331;
-            %tmp.335 = lgetv %rez_cmp_local_text_dateDisplay.7;
-            %tmp.336 = dup %tmp.333;
-            %tmp.337 = aputv %tmp.336 6 %tmp.335;
-            ret %tmp.337;
-_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_19_73_stop:
+            %tmp.131 = const :locX;
+            %tmp.132 = 240;
+            %tmp.133 = 30;
+            %tmp.134 = 100.0;
+            %tmp.135 = div %tmp.133 %tmp.134;
+            %tmp.136 = mul %tmp.132 %tmp.135;
+            %tmp.137 = dup %tmp.129;
+            %tmp.138 = aputv %tmp.137 %tmp.131 %tmp.136;
+            %tmp.140 = const :locY;
+            %tmp.141 = 240;
+            %tmp.142 = 50;
+            %tmp.143 = 100.0;
+            %tmp.144 = div %tmp.142 %tmp.143;
+            %tmp.145 = mul %tmp.141 %tmp.144;
+            %tmp.146 = dup %tmp.138;
+            %tmp.147 = aputv %tmp.146 %tmp.140 %tmp.145;
+            %tmp.149 = const :justification;
+            %tmp.150 = getm $.Toybox.Graphics;
+            %tmp.151 = getv %tmp.150 :TEXT_JUSTIFY_CENTER;
+            %tmp.152 = dup %tmp.147;
+            %tmp.153 = aputv %tmp.152 %tmp.149 %tmp.151;
+            %tmp.155 = const :font;
+            %tmp.157 = lgetv %local_Rez_Fonts_roboto.1;
+            %tmp.158 = dup %tmp.153;
+            %tmp.159 = aputv %tmp.158 %tmp.155 %tmp.157;
+            %tmp.114 = newc %tmp.117 (%tmp.159);
+            lputv %rez_cmp_local_text_timeDisplayMinute.5 %tmp.114;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 33 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_heartRateDisplay.6 = local;
+            %tmp.162 = getm $.Toybox.WatchUi;
+            %tmp.163 = getv function ? %tmp.162 :Text;
+            %tmp.164 = newd 6;
+            %tmp.166 = const :identifier;
+            %tmp.167 = "heartRateDisplay";
+            %tmp.168 = dup %tmp.164;
+            %tmp.169 = aputv %tmp.168 %tmp.166 %tmp.167;
+            %tmp.171 = const :color;
+            %tmp.172 = getm $.Toybox.Graphics;
+            %tmp.173 = getv %tmp.172 :COLOR_WHITE;
+            %tmp.174 = dup %tmp.169;
+            %tmp.175 = aputv %tmp.174 %tmp.171 %tmp.173;
+            %tmp.177 = const :locX;
+            %tmp.178 = 240;
+            %tmp.179 = 75;
+            %tmp.180 = 100.0;
+            %tmp.181 = div %tmp.179 %tmp.180;
+            %tmp.182 = mul %tmp.178 %tmp.181;
+            %tmp.183 = dup %tmp.175;
+            %tmp.184 = aputv %tmp.183 %tmp.177 %tmp.182;
+            %tmp.186 = const :locY;
+            %tmp.187 = 240;
+            %tmp.188 = 35;
+            %tmp.189 = 100.0;
+            %tmp.190 = div %tmp.188 %tmp.189;
+            %tmp.191 = mul %tmp.187 %tmp.190;
+            %tmp.192 = dup %tmp.184;
+            %tmp.193 = aputv %tmp.192 %tmp.186 %tmp.191;
+            %tmp.195 = const :justification;
+            %tmp.196 = getm $.Toybox.Graphics;
+            %tmp.197 = getv %tmp.196 :TEXT_JUSTIFY_CENTER;
+            %tmp.198 = dup %tmp.193;
+            %tmp.199 = aputv %tmp.198 %tmp.195 %tmp.197;
+            %tmp.201 = const :font;
+            %tmp.202 = getm $.Toybox.Graphics;
+            %tmp.203 = getv %tmp.202 :FONT_SMALL;
+            %tmp.204 = dup %tmp.199;
+            %tmp.205 = aputv %tmp.204 %tmp.201 %tmp.203;
+            %tmp.160 = newc %tmp.163 (%tmp.205);
+            lputv %rez_cmp_local_text_heartRateDisplay.6 %tmp.160;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 35 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_stepsDisplay.7 = local;
+            %tmp.208 = getm $.Toybox.WatchUi;
+            %tmp.209 = getv function ? %tmp.208 :Text;
+            %tmp.210 = newd 6;
+            %tmp.212 = const :identifier;
+            %tmp.213 = "stepsDisplay";
+            %tmp.214 = dup %tmp.210;
+            %tmp.215 = aputv %tmp.214 %tmp.212 %tmp.213;
+            %tmp.217 = const :color;
+            %tmp.218 = getm $.Toybox.Graphics;
+            %tmp.219 = getv %tmp.218 :COLOR_WHITE;
+            %tmp.220 = dup %tmp.215;
+            %tmp.221 = aputv %tmp.220 %tmp.217 %tmp.219;
+            %tmp.223 = const :locX;
+            %tmp.224 = 240;
+            %tmp.225 = 75;
+            %tmp.226 = 100.0;
+            %tmp.227 = div %tmp.225 %tmp.226;
+            %tmp.228 = mul %tmp.224 %tmp.227;
+            %tmp.229 = dup %tmp.221;
+            %tmp.230 = aputv %tmp.229 %tmp.223 %tmp.228;
+            %tmp.232 = const :locY;
+            %tmp.233 = 240;
+            %tmp.234 = 47;
+            %tmp.235 = 100.0;
+            %tmp.236 = div %tmp.234 %tmp.235;
+            %tmp.237 = mul %tmp.233 %tmp.236;
+            %tmp.238 = dup %tmp.230;
+            %tmp.239 = aputv %tmp.238 %tmp.232 %tmp.237;
+            %tmp.241 = const :justification;
+            %tmp.242 = getm $.Toybox.Graphics;
+            %tmp.243 = getv %tmp.242 :TEXT_JUSTIFY_CENTER;
+            %tmp.244 = dup %tmp.239;
+            %tmp.245 = aputv %tmp.244 %tmp.241 %tmp.243;
+            %tmp.247 = const :font;
+            %tmp.248 = getm $.Toybox.Graphics;
+            %tmp.249 = getv %tmp.248 :FONT_SMALL;
+            %tmp.250 = dup %tmp.245;
+            %tmp.251 = aputv %tmp.250 %tmp.247 %tmp.249;
+            %tmp.206 = newc %tmp.209 (%tmp.251);
+            lputv %rez_cmp_local_text_stepsDisplay.7 %tmp.206;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 37 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_stepGoalDisplay.8 = local;
+            %tmp.254 = getm $.Toybox.WatchUi;
+            %tmp.255 = getv function ? %tmp.254 :Text;
+            %tmp.256 = newd 6;
+            %tmp.258 = const :identifier;
+            %tmp.259 = "stepGoalDisplay";
+            %tmp.260 = dup %tmp.256;
+            %tmp.261 = aputv %tmp.260 %tmp.258 %tmp.259;
+            %tmp.263 = const :color;
+            %tmp.264 = getm $.Toybox.Graphics;
+            %tmp.265 = getv %tmp.264 :COLOR_WHITE;
+            %tmp.266 = dup %tmp.261;
+            %tmp.267 = aputv %tmp.266 %tmp.263 %tmp.265;
+            %tmp.269 = const :locX;
+            %tmp.270 = 240;
+            %tmp.271 = 75;
+            %tmp.272 = 100.0;
+            %tmp.273 = div %tmp.271 %tmp.272;
+            %tmp.274 = mul %tmp.270 %tmp.273;
+            %tmp.275 = dup %tmp.267;
+            %tmp.276 = aputv %tmp.275 %tmp.269 %tmp.274;
+            %tmp.278 = const :locY;
+            %tmp.279 = 240;
+            %tmp.280 = 58;
+            %tmp.281 = 100.0;
+            %tmp.282 = div %tmp.280 %tmp.281;
+            %tmp.283 = mul %tmp.279 %tmp.282;
+            %tmp.284 = dup %tmp.276;
+            %tmp.285 = aputv %tmp.284 %tmp.278 %tmp.283;
+            %tmp.287 = const :justification;
+            %tmp.288 = getm $.Toybox.Graphics;
+            %tmp.289 = getv %tmp.288 :TEXT_JUSTIFY_CENTER;
+            %tmp.290 = dup %tmp.285;
+            %tmp.291 = aputv %tmp.290 %tmp.287 %tmp.289;
+            %tmp.293 = const :font;
+            %tmp.294 = getm $.Toybox.Graphics;
+            %tmp.295 = getv %tmp.294 :FONT_SMALL;
+            %tmp.296 = dup %tmp.291;
+            %tmp.297 = aputv %tmp.296 %tmp.293 %tmp.295;
+            %tmp.252 = newc %tmp.255 (%tmp.297);
+            lputv %rez_cmp_local_text_stepGoalDisplay.8 %tmp.252;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 39 12 ]
+            [ "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start" "_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop" ]
+            %rez_cmp_local_text_batteryDisplay.9 = local;
+            %tmp.300 = getm $.Toybox.WatchUi;
+            %tmp.301 = getv function ? %tmp.300 :Text;
+            %tmp.302 = newd 6;
+            %tmp.304 = const :identifier;
+            %tmp.305 = "batteryDisplay";
+            %tmp.306 = dup %tmp.302;
+            %tmp.307 = aputv %tmp.306 %tmp.304 %tmp.305;
+            %tmp.309 = const :color;
+            %tmp.310 = getm $.Toybox.Graphics;
+            %tmp.311 = getv %tmp.310 :COLOR_WHITE;
+            %tmp.312 = dup %tmp.307;
+            %tmp.313 = aputv %tmp.312 %tmp.309 %tmp.311;
+            %tmp.315 = const :locX;
+            %tmp.316 = 240;
+            %tmp.317 = 0.5;
+            %tmp.318 = mul %tmp.316 %tmp.317;
+            %tmp.319 = dup %tmp.313;
+            %tmp.320 = aputv %tmp.319 %tmp.315 %tmp.318;
+            %tmp.322 = const :locY;
+            %tmp.323 = getm $.Toybox.WatchUi;
+            %tmp.324 = getv %tmp.323 :LAYOUT_VALIGN_BOTTOM;
+            %tmp.325 = dup %tmp.320;
+            %tmp.326 = aputv %tmp.325 %tmp.322 %tmp.324;
+            %tmp.328 = const :justification;
+            %tmp.329 = getm $.Toybox.Graphics;
+            %tmp.330 = getv %tmp.329 :TEXT_JUSTIFY_CENTER;
+            %tmp.331 = dup %tmp.326;
+            %tmp.332 = aputv %tmp.331 %tmp.328 %tmp.330;
+            %tmp.334 = const :font;
+            %tmp.335 = getm $.Toybox.Graphics;
+            %tmp.336 = getv %tmp.335 :FONT_SMALL;
+            %tmp.337 = dup %tmp.332;
+            %tmp.338 = aputv %tmp.337 %tmp.334 %tmp.336;
+            %tmp.298 = newc %tmp.301 (%tmp.338);
+            lputv %rez_cmp_local_text_batteryDisplay.9 %tmp.298;
+[ "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" 41 12 ]
+            %tmp.339 = newa Array<WatchUi.Drawable> 8;
+            %tmp.341 = lgetv %rez_cmp_local_custom_drawable_Background.2;
+            %tmp.342 = dup %tmp.339;
+            %tmp.343 = aputv %tmp.342 0 %tmp.341;
+            %tmp.345 = lgetv %rez_cmp_local_text_dateDisplay.3;
+            %tmp.346 = dup %tmp.343;
+            %tmp.347 = aputv %tmp.346 1 %tmp.345;
+            %tmp.349 = lgetv %rez_cmp_local_text_timeDisplayHour.4;
+            %tmp.350 = dup %tmp.347;
+            %tmp.351 = aputv %tmp.350 2 %tmp.349;
+            %tmp.353 = lgetv %rez_cmp_local_text_timeDisplayMinute.5;
+            %tmp.354 = dup %tmp.351;
+            %tmp.355 = aputv %tmp.354 3 %tmp.353;
+            %tmp.357 = lgetv %rez_cmp_local_text_heartRateDisplay.6;
+            %tmp.358 = dup %tmp.355;
+            %tmp.359 = aputv %tmp.358 4 %tmp.357;
+            %tmp.361 = lgetv %rez_cmp_local_text_stepsDisplay.7;
+            %tmp.362 = dup %tmp.359;
+            %tmp.363 = aputv %tmp.362 5 %tmp.361;
+            %tmp.365 = lgetv %rez_cmp_local_text_stepGoalDisplay.8;
+            %tmp.366 = dup %tmp.363;
+            %tmp.367 = aputv %tmp.366 6 %tmp.365;
+            %tmp.369 = lgetv %rez_cmp_local_text_batteryDisplay.9;
+            %tmp.370 = dup %tmp.367;
+            %tmp.371 = aputv %tmp.370 7 %tmp.369;
+            ret %tmp.371;
+_home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_stop:
         }
     }
-    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 38; ]
+    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 45; ]
     module Menus {
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 38; ]
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 45; ]
         <init> {
         }
     }
-    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 41; ]
+    [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 48; ]
     module Strings {
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 41; ]
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 48; ]
         <init> {
         }
-        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 42; @position = 27; initialized = true; ]
+        [ @file = "/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen"; @line = 49; @position = 27; initialized = true; ]
         var AppName as Symbol;
     }
 }
