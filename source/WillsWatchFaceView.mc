@@ -2,7 +2,8 @@ import Toybox.Graphics;
 import Toybox.Lang;
 import Toybox.System;
 import Toybox.WatchUi;
-import Toybox.ActivityMonitor;
+using Toybox.ActivityMonitor as Mon;
+import Toybox.Activity;
 import Toybox.Weather;
 import Toybox.Time;
 
@@ -35,7 +36,7 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
 
         var deviceHeight = dc.getHeight();
 		var deviceWidth = dc.getWidth();
-        var x=(deviceWidth*0.57), yHeart=(deviceHeight*0.37), ySteps=(deviceHeight*0.49), yTrophy=(deviceHeight*0.61);
+        var x=(deviceWidth*0.57), yHeart=(deviceHeight*0.38), ySteps=(deviceHeight*0.49), yTrophy=(deviceHeight*0.61);
         
 
         // Get and show the current time
@@ -50,11 +51,10 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
 
         // Call the parent onUpdate function to redraw the layout
         View.onUpdate(dc);
+
         dc.drawBitmap(x, yHeart, heartImage);
         dc.drawBitmap(x, ySteps, stepsImage);
         dc.drawBitmap(x, yTrophy, trophyImage);
-
-
 
     }
 
@@ -98,22 +98,57 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
 
     private function setHeartRateDisplay() {
 
-        var heartrate = "";
-        var hrIterator = ActivityMonitor.getHeartRateHistory(null, false);
-        var currentHeartRate = hrIterator.next().heartRate;
+        // var heartrate = "";
         
 
-        if (null != currentHeartRate) {                                           
-            if (currentHeartRate != ActivityMonitor.INVALID_HR_SAMPLE) {
-                heartrate = currentHeartRate.format("%d");
-            }
-            else {
-                heartrate = "--";
-            }
+        // if (ActivityMonitor has :INVALID_HR_SAMPLE) {
+
+        //     var hrIterator = ActivityMonitor.getHeartRateHistory(null, false);
+        //     var currentHeartRate = hrIterator.next().heartRate;
+
+        //     if (currentHeartRate == ActivityMonitor.INVALID_HR_SAMPLE) {
+        //         heartrate = "--";
+        //     }
+        //     else {
+        //         heartrate = currentHeartRate.format("%d");
+        //     }
+
+        // } 
+        // else {
+
+        //     heartrate = "";     
+
+        // if (null != currentHeartRate) {                                           
+        //     if (currentHeartRate != ActivityMonitor.INVALID_HR_SAMPLE) {
+        //         heartrate = currentHeartRate.format("%d");
+        //     }
+        //     else {
+        //         heartrate = "--";
+        //     }
+        // }
+
+
+        // var heartRateDisplay = View.findDrawableById("heartRateDisplay") as Text;
+        // heartRateDisplay.setText(heartrate);
+
+        var hr = 0;
+        var hrText = "";
+
+        var activityInfo = Activity.getActivityInfo();
+        if (activityInfo != null) {
+            hr = activityInfo.currentHeartRate;
+        } else {
+            hr = null;
+        }
+
+        if (hr == null || hr == 0) {
+            hrText = "--";
+        } else {
+            hrText = hr.format("%d");
         }
 
         var heartRateDisplay = View.findDrawableById("heartRateDisplay") as Text;
-        heartRateDisplay.setText(heartrate);
+        heartRateDisplay.setText(hrText);
 
     }
 
@@ -128,6 +163,13 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
     private function setStepCount() {
 
         var stepCount = ActivityMonitor.getInfo().steps;
+
+        if (stepCount == null) {
+            stepCount = 0;
+        } else if (stepCount > 9999) {
+            stepCount = stepCount.toString().substring(0, 2).toNumber();
+        }
+
         var stepCountDisplay = View.findDrawableById("stepsDisplay") as Text;
         stepCountDisplay.setText(stepCount.format("%d"));
 
@@ -140,7 +182,7 @@ class WillsWatchFaceView extends WatchUi.WatchFace {
         var percent = 0;
 
         if (steps > 0 && stepGoal != null) {
-            percent = ((stepGoal.toFloat() / steps.toFloat()) * 100f);
+            percent = ((steps.toFloat() / stepGoal.toFloat()) * 100f);
         }
         
         var stepGoalPercent = View.findDrawableById("stepGoalDisplay") as Text;
