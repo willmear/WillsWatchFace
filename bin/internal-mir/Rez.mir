@@ -218,7 +218,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.175 = aputv %tmp.174 %tmp.171 %tmp.173;
             %tmp.177 = const :locX;
             %tmp.178 = 240;
-            %tmp.179 = 75;
+            %tmp.179 = 71;
             %tmp.180 = 100.0;
             %tmp.181 = div %tmp.179 %tmp.180;
             %tmp.182 = mul %tmp.178 %tmp.181;
@@ -234,7 +234,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.193 = aputv %tmp.192 %tmp.186 %tmp.191;
             %tmp.195 = const :justification;
             %tmp.196 = getm $.Toybox.Graphics;
-            %tmp.197 = getv %tmp.196 :TEXT_JUSTIFY_CENTER;
+            %tmp.197 = getv %tmp.196 :TEXT_JUSTIFY_LEFT;
             %tmp.198 = dup %tmp.193;
             %tmp.199 = aputv %tmp.198 %tmp.195 %tmp.197;
             %tmp.201 = const :font;
@@ -261,7 +261,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.221 = aputv %tmp.220 %tmp.217 %tmp.219;
             %tmp.223 = const :locX;
             %tmp.224 = 240;
-            %tmp.225 = 75;
+            %tmp.225 = 71;
             %tmp.226 = 100.0;
             %tmp.227 = div %tmp.225 %tmp.226;
             %tmp.228 = mul %tmp.224 %tmp.227;
@@ -277,7 +277,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.239 = aputv %tmp.238 %tmp.232 %tmp.237;
             %tmp.241 = const :justification;
             %tmp.242 = getm $.Toybox.Graphics;
-            %tmp.243 = getv %tmp.242 :TEXT_JUSTIFY_CENTER;
+            %tmp.243 = getv %tmp.242 :TEXT_JUSTIFY_LEFT;
             %tmp.244 = dup %tmp.239;
             %tmp.245 = aputv %tmp.244 %tmp.241 %tmp.243;
             %tmp.247 = const :font;
@@ -304,7 +304,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.267 = aputv %tmp.266 %tmp.263 %tmp.265;
             %tmp.269 = const :locX;
             %tmp.270 = 240;
-            %tmp.271 = 75;
+            %tmp.271 = 71;
             %tmp.272 = 100.0;
             %tmp.273 = div %tmp.271 %tmp.272;
             %tmp.274 = mul %tmp.270 %tmp.273;
@@ -320,7 +320,7 @@ _home_will_WillsWatchFace_bin_gen_006_B2700_00_source_Rez_mcgen_23_73_start:
             %tmp.285 = aputv %tmp.284 %tmp.278 %tmp.283;
             %tmp.287 = const :justification;
             %tmp.288 = getm $.Toybox.Graphics;
-            %tmp.289 = getv %tmp.288 :TEXT_JUSTIFY_CENTER;
+            %tmp.289 = getv %tmp.288 :TEXT_JUSTIFY_LEFT;
             %tmp.290 = dup %tmp.285;
             %tmp.291 = aputv %tmp.290 %tmp.287 %tmp.289;
             %tmp.293 = const :font;

@@ -21,7 +21,7 @@
         <entry filename="/home/will/WillsWatchFace/source/Background.mc" id="9" lineNum="20" parent="globals/Background" pc="268435677" symbol="draw"/>
         <entry filename="/home/will/WillsWatchFace/source/Background.mc" id="9" lineNum="21" parent="globals/Background" pc="268435705" symbol="draw"/>
         <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="10" lineNum="7" parent="globals/Rez" pc="268435747" symbol="&lt;init&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="11" lineNum="9" parent="globals/WillsWatchFaceView" pc="268435771" symbol="&lt;init&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="11" lineNum="10" parent="globals/WillsWatchFaceView" pc="268435771" symbol="&lt;init&gt;"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="75" parent="globals/WillsWatchFaceView" pc="268435790" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="77" parent="globals/WillsWatchFaceView" pc="268435794" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="79" parent="globals/WillsWatchFaceView" pc="268435811" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
@@ -30,73 +30,79 @@
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="83" parent="globals/WillsWatchFaceView" pc="268435941" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="85" parent="globals/WillsWatchFaceView" pc="268435969" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="13" lineNum="86" parent="globals/WillsWatchFaceView" pc="268435983" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="136" parent="globals/WillsWatchFaceView" pc="268435998" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="138" parent="globals/WillsWatchFaceView" pc="268436002" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="139" parent="globals/WillsWatchFaceView" pc="268436025" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="140" parent="globals/WillsWatchFaceView" pc="268436048" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="142" parent="globals/WillsWatchFaceView" pc="268436055" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="143" parent="globals/WillsWatchFaceView" pc="268436076" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="146" parent="globals/WillsWatchFaceView" pc="268436110" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="147" parent="globals/WillsWatchFaceView" pc="268436138" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="16" lineNum="23" parent="globals/WillsWatchFaceView" pc="268436173" symbol="onLayout"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="16" lineNum="24" parent="globals/WillsWatchFaceView" pc="268436175" symbol="onLayout"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="99" parent="globals/WillsWatchFaceView" pc="268436217" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="101" parent="globals/WillsWatchFaceView" pc="268436221" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="102" parent="globals/WillsWatchFaceView" pc="268436228" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="103" parent="globals/WillsWatchFaceView" pc="268436248" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="106" parent="globals/WillsWatchFaceView" pc="268436267" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="107" parent="globals/WillsWatchFaceView" pc="268436274" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="108" parent="globals/WillsWatchFaceView" pc="268436285" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="111" parent="globals/WillsWatchFaceView" pc="268436306" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="115" parent="globals/WillsWatchFaceView" pc="268436316" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="116" parent="globals/WillsWatchFaceView" pc="268436344" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="91" parent="globals/WillsWatchFaceView" pc="268436359" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="93" parent="globals/WillsWatchFaceView" pc="268436363" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="94" parent="globals/WillsWatchFaceView" pc="268436386" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="95" parent="globals/WillsWatchFaceView" pc="268436414" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="120" parent="globals/WillsWatchFaceView" pc="268436449" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="122" parent="globals/WillsWatchFaceView" pc="268436453" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="123" parent="globals/WillsWatchFaceView" pc="268436476" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="124" parent="globals/WillsWatchFaceView" pc="268436504" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="151" parent="globals/WillsWatchFaceView" pc="268436533" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="153" parent="globals/WillsWatchFaceView" pc="268436537" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="154" parent="globals/WillsWatchFaceView" pc="268436580" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="159" parent="globals/WillsWatchFaceView" pc="268436656" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="160" parent="globals/WillsWatchFaceView" pc="268436684" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="15" parent="globals/WillsWatchFaceView" pc="268436699" symbol="initialize"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="16" parent="globals/WillsWatchFaceView" pc="268436701" symbol="initialize"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="17" parent="globals/WillsWatchFaceView" pc="268436719" symbol="initialize"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="18" parent="globals/WillsWatchFaceView" pc="268436766" symbol="initialize"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="19" parent="globals/WillsWatchFaceView" pc="268436813" symbol="initialize"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="34" parent="globals/WillsWatchFaceView" pc="268436861" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="36" parent="globals/WillsWatchFaceView" pc="268436865" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="37" parent="globals/WillsWatchFaceView" pc="268436878" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="38" parent="globals/WillsWatchFaceView" pc="268436891" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="42" parent="globals/WillsWatchFaceView" pc="268436931" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="178" parent="globals/WillsWatchFaceView" pc="268435998" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="180" parent="globals/WillsWatchFaceView" pc="268436002" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="181" parent="globals/WillsWatchFaceView" pc="268436027" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="182" parent="globals/WillsWatchFaceView" pc="268436052" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="184" parent="globals/WillsWatchFaceView" pc="268436059" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="185" parent="globals/WillsWatchFaceView" pc="268436080" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="188" parent="globals/WillsWatchFaceView" pc="268436114" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="14" lineNum="189" parent="globals/WillsWatchFaceView" pc="268436142" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="16" lineNum="24" parent="globals/WillsWatchFaceView" pc="268436177" symbol="onLayout"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="16" lineNum="25" parent="globals/WillsWatchFaceView" pc="268436179" symbol="onLayout"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="99" parent="globals/WillsWatchFaceView" pc="268436221" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="134" parent="globals/WillsWatchFaceView" pc="268436225" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="135" parent="globals/WillsWatchFaceView" pc="268436232" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="137" parent="globals/WillsWatchFaceView" pc="268436239" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="138" parent="globals/WillsWatchFaceView" pc="268436256" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="139" parent="globals/WillsWatchFaceView" pc="268436263" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="141" parent="globals/WillsWatchFaceView" pc="268436276" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="144" parent="globals/WillsWatchFaceView" pc="268436279" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="145" parent="globals/WillsWatchFaceView" pc="268436300" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="147" parent="globals/WillsWatchFaceView" pc="268436310" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="150" parent="globals/WillsWatchFaceView" pc="268436328" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="17" lineNum="151" parent="globals/WillsWatchFaceView" pc="268436356" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="91" parent="globals/WillsWatchFaceView" pc="268436371" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="93" parent="globals/WillsWatchFaceView" pc="268436375" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="94" parent="globals/WillsWatchFaceView" pc="268436398" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="18" lineNum="95" parent="globals/WillsWatchFaceView" pc="268436426" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="155" parent="globals/WillsWatchFaceView" pc="268436461" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="157" parent="globals/WillsWatchFaceView" pc="268436465" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="158" parent="globals/WillsWatchFaceView" pc="268436488" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="19" lineNum="159" parent="globals/WillsWatchFaceView" pc="268436516" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="193" parent="globals/WillsWatchFaceView" pc="268436545" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="195" parent="globals/WillsWatchFaceView" pc="268436549" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="196" parent="globals/WillsWatchFaceView" pc="268436592" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="201" parent="globals/WillsWatchFaceView" pc="268436668" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="21" lineNum="202" parent="globals/WillsWatchFaceView" pc="268436696" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="16" parent="globals/WillsWatchFaceView" pc="268436711" symbol="initialize"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="17" parent="globals/WillsWatchFaceView" pc="268436713" symbol="initialize"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="18" parent="globals/WillsWatchFaceView" pc="268436731" symbol="initialize"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="19" parent="globals/WillsWatchFaceView" pc="268436778" symbol="initialize"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="22" lineNum="20" parent="globals/WillsWatchFaceView" pc="268436825" symbol="initialize"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="35" parent="globals/WillsWatchFaceView" pc="268436873" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="37" parent="globals/WillsWatchFaceView" pc="268436877" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="38" parent="globals/WillsWatchFaceView" pc="268436890" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="39" parent="globals/WillsWatchFaceView" pc="268436903" symbol="onUpdate"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="43" parent="globals/WillsWatchFaceView" pc="268436943" symbol="onUpdate"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="44" parent="globals/WillsWatchFaceView" pc="268436955" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="46" parent="globals/WillsWatchFaceView" pc="268436967" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="45" parent="globals/WillsWatchFaceView" pc="268436967" symbol="onUpdate"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="47" parent="globals/WillsWatchFaceView" pc="268436979" symbol="onUpdate"/>
         <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="48" parent="globals/WillsWatchFaceView" pc="268436991" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="52" parent="globals/WillsWatchFaceView" pc="268437003" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="53" parent="globals/WillsWatchFaceView" pc="268437027" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="54" parent="globals/WillsWatchFaceView" pc="268437051" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="55" parent="globals/WillsWatchFaceView" pc="268437075" symbol="onUpdate"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="128" parent="globals/WillsWatchFaceView" pc="268437100" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="130" parent="globals/WillsWatchFaceView" pc="268437104" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="131" parent="globals/WillsWatchFaceView" pc="268437127" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="132" parent="globals/WillsWatchFaceView" pc="268437155" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="23" parent="globals/Rez/Layouts" pc="268437184" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Layouts" pc="268437196" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Layouts" pc="268437237" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="27" parent="globals/Rez/Layouts" pc="268437297" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="29" parent="globals/Rez/Layouts" pc="268437409" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="31" parent="globals/Rez/Layouts" pc="268437518" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Layouts" pc="268437627" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="35" parent="globals/Rez/Layouts" pc="268437739" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="37" parent="globals/Rez/Layouts" pc="268437851" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="39" parent="globals/Rez/Layouts" pc="268437963" symbol="WatchFace"/>
-        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="41" parent="globals/Rez/Layouts" pc="268438075" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="49" parent="globals/WillsWatchFaceView" pc="268437003" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="53" parent="globals/WillsWatchFaceView" pc="268437015" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="55" parent="globals/WillsWatchFaceView" pc="268437039" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="56" parent="globals/WillsWatchFaceView" pc="268437063" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="24" lineNum="57" parent="globals/WillsWatchFaceView" pc="268437087" symbol="onUpdate"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="163" parent="globals/WillsWatchFaceView" pc="268437112" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="165" parent="globals/WillsWatchFaceView" pc="268437116" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="167" parent="globals/WillsWatchFaceView" pc="268437141" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="168" parent="globals/WillsWatchFaceView" pc="268437148" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="169" parent="globals/WillsWatchFaceView" pc="268437158" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="170" parent="globals/WillsWatchFaceView" pc="268437169" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="173" parent="globals/WillsWatchFaceView" pc="268437213" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/source/WillsWatchFaceView.mc" id="25" lineNum="174" parent="globals/WillsWatchFaceView" pc="268437241" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="23" parent="globals/Rez/Layouts" pc="268437270" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="24" parent="globals/Rez/Layouts" pc="268437282" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="25" parent="globals/Rez/Layouts" pc="268437323" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="27" parent="globals/Rez/Layouts" pc="268437383" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="29" parent="globals/Rez/Layouts" pc="268437495" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="31" parent="globals/Rez/Layouts" pc="268437604" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="33" parent="globals/Rez/Layouts" pc="268437713" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="35" parent="globals/Rez/Layouts" pc="268437825" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="37" parent="globals/Rez/Layouts" pc="268437937" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="39" parent="globals/Rez/Layouts" pc="268438049" symbol="WatchFace"/>
+        <entry filename="/home/will/WillsWatchFace/bin/gen/006-B2700-00/source/Rez.mcgen" id="26" lineNum="41" parent="globals/Rez/Layouts" pc="268438161" symbol="WatchFace"/>
     </pcToLineNum>
     <symbolTable>
         <entry id="8388639" module="true" symbol="Graphics"/>
@@ -109,9 +115,9 @@
         <entry field="true" id="25" symbol="roboto"/>
         <entry field="true" id="8388611" module="true" symbol="Toybox"/>
         <entry field="true" id="26" symbol="AppName"/>
-        <entry id="8388633" module="true" symbol="ActivityMonitor"/>
         <entry id="8" module="true" symbol="globals/Rez/Strings"/>
         <entry id="8388772" module="true" object="true" symbol="Fonts"/>
+        <entry id="8388631" module="true" symbol="Activity"/>
         <entry id="8388648" module="true" symbol="WatchUi"/>
         <entry id="16" method="true" symbol="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;"/>
         <entry id="2" module="true" symbol="globals/Rez"/>
@@ -172,41 +178,41 @@
         <entry endPc="268435996" name="minuteString" stackId="3" startPc="268435794"/>
         <entry endPc="268435996" name="hourDisplay" stackId="4" startPc="268435794"/>
         <entry endPc="268435996" name="minuteDisplay" stackId="5" startPc="268435794"/>
-        <entry endPc="268436171" name="steps" stackId="1" startPc="268436002"/>
-        <entry endPc="268436171" name="stepGoal" stackId="2" startPc="268436002"/>
-        <entry endPc="268436171" name="percent" stackId="3" startPc="268436002"/>
-        <entry endPc="268436171" name="stepGoalPercent" stackId="4" startPc="268436002"/>
-        <entry arg="true" endPc="268436216" name="dc" stackId="1" startPc="268436173"/>
-        <entry endPc="268436357" name="heartrate" stackId="1" startPc="268436221"/>
-        <entry endPc="268436357" name="hrIterator" stackId="2" startPc="268436221"/>
-        <entry endPc="268436357" name="currentHeartRate" stackId="3" startPc="268436221"/>
-        <entry endPc="268436357" name="heartRateDisplay" stackId="4" startPc="268436221"/>
-        <entry endPc="268436447" name="battery" stackId="1" startPc="268436363"/>
-        <entry endPc="268436447" name="batteryDisplay" stackId="2" startPc="268436363"/>
-        <entry endPc="268436531" name="weather" stackId="1" startPc="268436453"/>
-        <entry endPc="268436531" name="weatherDisplay" stackId="2" startPc="268436453"/>
-        <entry endPc="268436697" name="today" stackId="1" startPc="268436537"/>
-        <entry endPc="268436697" name="dateString" stackId="2" startPc="268436537"/>
-        <entry endPc="268436697" name="dateDisplay" stackId="3" startPc="268436537"/>
-        <entry arg="true" endPc="268437099" name="dc" stackId="1" startPc="268436861"/>
-        <entry endPc="268437098" name="deviceHeight" stackId="2" startPc="268436865"/>
-        <entry endPc="268437098" name="deviceWidth" stackId="3" startPc="268436865"/>
-        <entry endPc="268437098" name="x" stackId="4" startPc="268436865"/>
-        <entry endPc="268437098" name="yHeart" stackId="5" startPc="268436865"/>
-        <entry endPc="268437098" name="ySteps" stackId="6" startPc="268436865"/>
-        <entry endPc="268437098" name="yTrophy" stackId="7" startPc="268436865"/>
-        <entry endPc="268437182" name="stepCount" stackId="1" startPc="268437104"/>
-        <entry endPc="268437182" name="stepCountDisplay" stackId="2" startPc="268437104"/>
-        <entry arg="true" endPc="268438161" name="dc" stackId="1" startPc="268437184"/>
-        <entry endPc="268438161" name="local_Rez_Fonts_roboto" stackId="2" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_custom_drawable_Background" stackId="3" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_dateDisplay" stackId="4" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_timeDisplayHour" stackId="5" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_timeDisplayMinute" stackId="6" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_heartRateDisplay" stackId="7" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_stepsDisplay" stackId="8" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_stepGoalDisplay" stackId="9" startPc="268437196"/>
-        <entry endPc="268438161" name="rez_cmp_local_text_batteryDisplay" stackId="10" startPc="268437196"/>
+        <entry endPc="268436175" name="steps" stackId="1" startPc="268436002"/>
+        <entry endPc="268436175" name="stepGoal" stackId="2" startPc="268436002"/>
+        <entry endPc="268436175" name="percent" stackId="3" startPc="268436002"/>
+        <entry endPc="268436175" name="stepGoalPercent" stackId="4" startPc="268436002"/>
+        <entry arg="true" endPc="268436220" name="dc" stackId="1" startPc="268436177"/>
+        <entry endPc="268436369" name="hr" stackId="1" startPc="268436225"/>
+        <entry endPc="268436369" name="hrText" stackId="2" startPc="268436225"/>
+        <entry endPc="268436369" name="activityInfo" stackId="3" startPc="268436225"/>
+        <entry endPc="268436369" name="heartRateDisplay" stackId="4" startPc="268436225"/>
+        <entry endPc="268436459" name="battery" stackId="1" startPc="268436375"/>
+        <entry endPc="268436459" name="batteryDisplay" stackId="2" startPc="268436375"/>
+        <entry endPc="268436543" name="weather" stackId="1" startPc="268436465"/>
+        <entry endPc="268436543" name="weatherDisplay" stackId="2" startPc="268436465"/>
+        <entry endPc="268436709" name="today" stackId="1" startPc="268436549"/>
+        <entry endPc="268436709" name="dateString" stackId="2" startPc="268436549"/>
+        <entry endPc="268436709" name="dateDisplay" stackId="3" startPc="268436549"/>
+        <entry arg="true" endPc="268437111" name="dc" stackId="1" startPc="268436873"/>
+        <entry endPc="268437110" name="deviceHeight" stackId="2" startPc="268436877"/>
+        <entry endPc="268437110" name="deviceWidth" stackId="3" startPc="268436877"/>
+        <entry endPc="268437110" name="x" stackId="4" startPc="268436877"/>
+        <entry endPc="268437110" name="yHeart" stackId="5" startPc="268436877"/>
+        <entry endPc="268437110" name="ySteps" stackId="6" startPc="268436877"/>
+        <entry endPc="268437110" name="yTrophy" stackId="7" startPc="268436877"/>
+        <entry endPc="268437268" name="stepCount" stackId="1" startPc="268437116"/>
+        <entry endPc="268437268" name="stepCountDisplay" stackId="2" startPc="268437116"/>
+        <entry arg="true" endPc="268438247" name="dc" stackId="1" startPc="268437270"/>
+        <entry endPc="268438247" name="local_Rez_Fonts_roboto" stackId="2" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_custom_drawable_Background" stackId="3" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_dateDisplay" stackId="4" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_timeDisplayHour" stackId="5" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_timeDisplayMinute" stackId="6" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_heartRateDisplay" stackId="7" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_stepsDisplay" stackId="8" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_stepGoalDisplay" stackId="9" startPc="268437282"/>
+        <entry endPc="268438247" name="rez_cmp_local_text_batteryDisplay" stackId="10" startPc="268437282"/>
     </localVars>
     <annotations>
         <annotationEntry annotation="initialized" class="Drawables" module="globals/Rez" symbol="LauncherIcon"/>
@@ -273,42 +279,42 @@
         <functionEntry accessMode="private" endPc="268435997" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setClockDisplay&gt;" parent="WillsWatchFaceView" startPc="268435790">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436172" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;" parent="WillsWatchFaceView" startPc="268435998">
+        <functionEntry accessMode="private" endPc="268436176" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepGoalPercent&gt;" parent="WillsWatchFaceView" startPc="268435998">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onShow" parent="WillsWatchFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436216" name="onLayout" parent="WillsWatchFaceView" startPc="268436173">
+        <functionEntry accessMode="public" endPc="268436220" name="onLayout" parent="WillsWatchFaceView" startPc="268436177">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436358" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;" parent="WillsWatchFaceView" startPc="268436217">
+        <functionEntry accessMode="private" endPc="268436370" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setHeartRateDisplay&gt;" parent="WillsWatchFaceView" startPc="268436221">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436448" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;" parent="WillsWatchFaceView" startPc="268436359">
+        <functionEntry accessMode="private" endPc="268436460" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setBatteryDisplay&gt;" parent="WillsWatchFaceView" startPc="268436371">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436532" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;" parent="WillsWatchFaceView" startPc="268436449">
+        <functionEntry accessMode="private" endPc="268436544" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setWeatherDisplay&gt;" parent="WillsWatchFaceView" startPc="268436461">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onEnterSleep" parent="WillsWatchFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268436698" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;" parent="WillsWatchFaceView" startPc="268436533">
+        <functionEntry accessMode="private" endPc="268436710" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setDate&gt;" parent="WillsWatchFaceView" startPc="268436545">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268436860" name="initialize" parent="WillsWatchFaceView" startPc="268436699">
+        <functionEntry accessMode="public" endPc="268436872" name="initialize" parent="WillsWatchFaceView" startPc="268436711">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="onHide" parent="WillsWatchFaceView">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268437099" name="onUpdate" parent="WillsWatchFaceView" startPc="268436861">
+        <functionEntry accessMode="public" endPc="268437111" name="onUpdate" parent="WillsWatchFaceView" startPc="268436873">
             <param id="dc"/>
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="private" endPc="268437183" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;" parent="WillsWatchFaceView" startPc="268437100">
+        <functionEntry accessMode="private" endPc="268437269" name="&lt;globals/WillsWatchFaceView/&lt;&gt;setStepCount&gt;" parent="WillsWatchFaceView" startPc="268437112">
             <documentation/>
         </functionEntry>
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="Drawables">
@@ -329,7 +335,7 @@
         <functionEntry accessMode="public" name="&lt;init&gt;" parent="JsonData">
             <documentation/>
         </functionEntry>
-        <functionEntry accessMode="public" endPc="268438161" name="WatchFace" parent="Layouts" startPc="268437184">
+        <functionEntry accessMode="public" endPc="268438247" name="WatchFace" parent="Layouts" startPc="268437270">
             <param id="dc"/>
             <documentation/>
         </functionEntry>

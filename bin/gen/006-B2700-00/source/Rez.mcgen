@@ -30,11 +30,11 @@ module Rez {
 
             var rez_cmp_local_text_timeDisplayMinute = new WatchUi.Text({:identifier=>"timeDisplayMinute", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (30 / 100.0)), :locY=>(240 * (50 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>local_Rez_Fonts_roboto});
 
-            var rez_cmp_local_text_heartRateDisplay = new WatchUi.Text({:identifier=>"heartRateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (35 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_heartRateDisplay = new WatchUi.Text({:identifier=>"heartRateDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (71 / 100.0)), :locY=>(240 * (35 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_SMALL});
 
-            var rez_cmp_local_text_stepsDisplay = new WatchUi.Text({:identifier=>"stepsDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (47 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_stepsDisplay = new WatchUi.Text({:identifier=>"stepsDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (71 / 100.0)), :locY=>(240 * (47 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_SMALL});
 
-            var rez_cmp_local_text_stepGoalDisplay = new WatchUi.Text({:identifier=>"stepGoalDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (75 / 100.0)), :locY=>(240 * (58 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
+            var rez_cmp_local_text_stepGoalDisplay = new WatchUi.Text({:identifier=>"stepGoalDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * (71 / 100.0)), :locY=>(240 * (58 / 100.0)), :justification=>Gfx.TEXT_JUSTIFY_LEFT, :font=>Gfx.FONT_SMALL});
 
             var rez_cmp_local_text_batteryDisplay = new WatchUi.Text({:identifier=>"batteryDisplay", :color=>Gfx.COLOR_WHITE, :locX=>(240 * 0.5), :locY=>WatchUi.LAYOUT_VALIGN_BOTTOM, :justification=>Gfx.TEXT_JUSTIFY_CENTER, :font=>Gfx.FONT_SMALL});
 
